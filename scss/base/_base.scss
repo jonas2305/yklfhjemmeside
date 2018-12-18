@@ -7,6 +7,8 @@ $color-pri-orange: #E75037;
 $color-pri-yellow: #EFBA1A;
 $color-pri-white: #FFFFFF;
 $color-pri-grey: #BFBFBF;
+$color-pri-lightgrey: #F2F2F2;
+$color-pri-darkgrey: #707070;
 
 // ---------Font---------
 $font-primary: 'Hind Siliguri', sans-serif;
@@ -15,6 +17,11 @@ $font-primary: 'Hind Siliguri', sans-serif;
 html, body{
   margin: 0px;
   height: 100%!important;
+  overflow-x: hidden;
+  img{
+    display: block;
+    width: 100%;
+  }
 }
 
 // STYLER AL SKRIFT
@@ -25,7 +32,9 @@ body{
   // STYLER ALLE H1
 h1{
   color: $color-pri-black;
-  font-size: 3em;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0;
 }
 
 // STYLER ALLE H2
@@ -37,7 +46,79 @@ h2{
 
 // STYLER ALLE H3
 h3{
-  color: $color-pri-darkblue;
+  color: $color-pri-orange;
   font-size: 1.5em;
   margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+//STYLER ALLE H4
+h4{
+  color: $color-pri-darkgrey;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+// STYLER ALLE P
+p{
+  color: $color-pri-darkgrey;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+//STYLER P ELEMENT TIL HVID TEKST
+.pWhite{
+  color: $color-pri-white;
+}
+
+//STYLER TITEL-ELEMENT PÅ ALLE SIDER
+.sideTitel{
+  background-image: url("http://bondejonas.dk/billederTilDiverseProjekter/OreStrandCampingCoverWEB-7841.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3em 0 0 10px;
+  margin: 0 -10px;
+  width: 100vw!important;
+  h1{
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 10px $color-pri-white;
+  }
+}
+
+//STYLER ALLE KNAPPER I FORSKELLIGE STØRRELSER
+
+.btnSmall{
+
+}
+.btnReg{
+  background-color: $color-pri-yellow;
+  padding: 10px 30px;
+  color: $color-pri-darkblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: -3px 3px $color-pri-black;
+  margin: 3px;
+}
+.btnBig{
+
+}
+
+// STYLER ALLE ELEMENTER OVER 900PX
+@media screen and(min-width: 900px){
+
+  // STYLER H1
+  h1{
+    font-size: 3em;
+  }
+
+  //STYLER TITEL-ELEMENT PÅ ALLE SIDER
+  .sideTitel{
+    padding: 4.5em 0 0 35px;
+  }
+
 }

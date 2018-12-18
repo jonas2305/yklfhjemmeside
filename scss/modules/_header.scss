@@ -1,22 +1,22 @@
 //HEADER STYLING - GÆLDER BÅDE MOBIL OG PC
 header {
-  padding-bottom: 15px;
   background-color: $color-pri-darkblue;
-
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 10px;
   //Mobil logo vises og styles
   figure {
-    margin: 0;
+    margin: 10px;
   }
 
   .logo-mobil {
     display: block;
-    position: relative;
     z-index: 20;
-    top: 12px;
-    left: 10px;
     width: 150px;
     img {
       width: 150px;
+      margin-left: -10px;
     }
   }
   //Web logo skjules
@@ -25,9 +25,6 @@ header {
   }
   //Top nav styling
   .topnav {
-    position: absolute;
-    top: 5px;
-    right: 20px;
     z-index: 10;
     .menuknap {
       font-size: 2.5em;
@@ -46,8 +43,8 @@ header {
       margin: auto;
       .burgermenuClose {
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 20px;
+        right: 10px;
         font-size: 2.5em;
         color: $color-pri-white;
         cursor: pointer;
@@ -76,7 +73,8 @@ header {
   }
   //CSS GÆLDER KUN FOR PC-HEADER (ALM. MENU)
   @media screen and(min-width: 900px){
-    margin-top: -15px;
+
+    padding-bottom: 15px;
     //Skjuler logo på mobil
     .logo-mobil{
       display: none;
@@ -89,26 +87,30 @@ header {
           display: flex;
           margin: 5px 30px;
           height: 60px;
-          padding-top: 25px;
+          width: auto;
         }
       }
     }
     //Styler top nav-bar
     .topnav{
+      height: auto;
       .menuknap{
         display: none;
       }
       .topnavContentWrapper {
-        display: block;
-        height: auto;
+        display: flex;
+        align-items: center;
+        position: inherit;
+        padding-right: 15px;
         .burgermenuClose{
           display: none;
         }
         .topnavContent {
-          flex-direction: row !important;
+          display: block;
+          position: inherit;
           float: right;
-          top: 48px;
-          right: 35px;
+          top: auto;
+          transform: none;
           .menuActive{
             font-weight: 700;
           }

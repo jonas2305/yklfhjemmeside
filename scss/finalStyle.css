@@ -1,13 +1,19 @@
 html, body {
   margin: 0px;
-  height: 100% !important; }
+  height: 100% !important;
+  overflow-x: hidden; }
+  html img, body img {
+    display: block;
+    width: 100%; }
 
 body {
   font-family: "Hind Siliguri", sans-serif; }
 
 h1 {
   color: #333333;
-  font-size: 3em; }
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0; }
 
 h2 {
   color: #0F2F50;
@@ -15,30 +21,73 @@ h2 {
   margin: 5px 0; }
 
 h3 {
-  color: #0F2F50;
+  color: #E75037;
   font-size: 1.5em;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-transform: uppercase; }
 
+h4 {
+  color: #707070;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.2em; }
+
+p {
+  color: #707070;
+  line-height: 1em;
+  margin-top: 0; }
+
+.pWhite {
+  color: #FFFFFF; }
+
+.sideTitel {
+  background-image: url("http://bondejonas.dk/billederTilDiverseProjekter/OreStrandCampingCoverWEB-7841.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3em 0 0 10px;
+  margin: 0 -10px;
+  width: 100vw !important; }
+  .sideTitel h1 {
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 10px #FFFFFF; }
+
+.btnReg {
+  background-color: #EFBA1A;
+  padding: 10px 30px;
+  color: #0F2F50;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: -3px 3px #333333;
+  margin: 3px; }
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3em; }
+
+  .sideTitel {
+    padding: 4.5em 0 0 35px; } }
 header {
-  padding-bottom: 15px;
-  background-color: #0F2F50; }
+  background-color: #0F2F50;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 10px; }
   header figure {
-    margin: 0; }
+    margin: 10px; }
   header .logo-mobil {
     display: block;
-    position: relative;
     z-index: 20;
-    top: 12px;
-    left: 10px;
     width: 150px; }
     header .logo-mobil img {
-      width: 150px; }
+      width: 150px;
+      margin-left: -10px; }
   header .logo-web {
     display: none; }
   header .topnav {
-    position: absolute;
-    top: 5px;
-    right: 20px;
     z-index: 10; }
     header .topnav .menuknap {
       font-size: 2.5em;
@@ -56,8 +105,8 @@ header {
       margin: auto; }
       header .topnav .topnavContentWrapper .burgermenuClose {
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 20px;
+        right: 10px;
         font-size: 2.5em;
         color: #FFFFFF;
         cursor: pointer; }
@@ -80,7 +129,7 @@ header {
           font-weight: 700; }
   @media screen and (min-width: 900px) {
     header {
-      margin-top: -15px; }
+      padding-bottom: 15px; }
       header .logo-mobil {
         display: none; }
       header .logo-web {
@@ -89,27 +138,76 @@ header {
           display: flex;
           margin: 5px 30px;
           height: 60px;
-          padding-top: 25px; }
-      header .topnav .menuknap {
-        display: none; }
-      header .topnav .topnavContentWrapper {
-        display: block;
+          width: auto; }
+      header .topnav {
         height: auto; }
-        header .topnav .topnavContentWrapper .burgermenuClose {
+        header .topnav .menuknap {
           display: none; }
-        header .topnav .topnavContentWrapper .topnavContent {
-          flex-direction: row !important;
-          float: right;
-          top: 48px;
-          right: 35px; }
-          header .topnav .topnavContentWrapper .topnavContent .menuActive {
-            font-weight: 700; }
-          header .topnav .topnavContentWrapper .topnavContent a {
-            font-size: 1em;
-            padding: 20px !important;
-            color: #FFFFFF; } }
+        header .topnav .topnavContentWrapper {
+          display: flex;
+          align-items: center;
+          position: inherit;
+          padding-right: 15px; }
+          header .topnav .topnavContentWrapper .burgermenuClose {
+            display: none; }
+          header .topnav .topnavContentWrapper .topnavContent {
+            display: block;
+            position: inherit;
+            float: right;
+            top: auto;
+            transform: none; }
+            header .topnav .topnavContentWrapper .topnavContent .menuActive {
+              font-weight: 700; }
+            header .topnav .topnavContentWrapper .topnavContent a {
+              font-size: 1em;
+              padding: 20px !important;
+              color: #FFFFFF; } }
   @media screen and (min-width: 1200px) {
     header a {
       font-size: 1.2em !important; } }
+
+.mainHvemErVi {
+  padding: 0 10px; }
+  .mainHvemErVi .hvemErViIntro {
+    display: flex;
+    flex-direction: column; }
+    .mainHvemErVi .hvemErViIntro .hvemErViIntroTekst {
+      width: 100%; }
+    .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo {
+      background-color: #0F2F50;
+      padding: 25px 10px;
+      margin: 0 -10px; }
+      .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo img {
+        width: auto;
+        max-height: 250px;
+        margin: auto; }
+  .mainHvemErVi .hvemErViOmForeningen img {
+    width: auto;
+    max-height: 250px;
+    margin: auto; }
+  .mainHvemErVi .hvemErViCitat {
+    background-color: #0F2F50;
+    margin: 30px -10px;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .mainHvemErVi .hvemErViCitat div h3 {
+      margin-top: 0; }
+    .mainHvemErVi .hvemErViCitat img {
+      width: 30%;
+      height: 30%; }
+  .mainHvemErVi .hvemErViModMedlemmerne {
+    background-color: #F2F2F2;
+    margin: 0 -10px;
+    padding: 10px 10px; }
+    .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem {
+      background-color: #0F2F50;
+      padding: 20px;
+      margin: 20px auto; }
+      .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem h3 {
+        margin: 0; }
+      .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem p {
+        margin: 0; }
 
 /*# sourceMappingURL=finalStyle.css.map */
