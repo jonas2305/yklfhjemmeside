@@ -1,8 +1,9 @@
 //HEADER STYLING - GÆLDER BÅDE MOBIL OG PC
 header {
   padding-bottom: 15px;
-  //Mobil logo vises og styles
+  background-color: $color-pri-darkblue;
 
+  //Mobil logo vises og styles
   figure {
     margin: 0;
   }
@@ -10,11 +11,12 @@ header {
   .logo-mobil {
     display: block;
     position: relative;
-    z-index: 2;
-    top: 10px;
+    z-index: 20;
+    top: 12px;
     left: 10px;
+    width: 150px;
     img {
-      width: 100px;
+      width: 150px;
     }
   }
   //Web logo skjules
@@ -24,17 +26,17 @@ header {
   //Top nav styling
   .topnav {
     position: absolute;
-    top: 30px;
+    top: 5px;
     right: 20px;
     z-index: 10;
     .menuknap {
       font-size: 2.5em;
-      color: $color-pri-darkblue;
+      color: $color-pri-white;
       cursor: pointer;
     }
     .topnavContentWrapper {
       display: none;
-      background-color: rgba(27, 35, 42, 0.8);
+      background-color: rgba(15, 47, 80, 0.9);
       width: 100%;
       height: 100%;
       position: fixed;
@@ -44,10 +46,10 @@ header {
       margin: auto;
       .burgermenuClose {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 15px;
+        right: 20px;
         font-size: 2.5em;
-        color: $color-pri-darkblue;
+        color: $color-pri-white;
         cursor: pointer;
       }
       .topnavContent {
@@ -55,31 +57,75 @@ header {
         flex-direction: column;
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(0%, -50%);
         a {
           width: auto;
-          color: $color-pri-darkblue;
-          text-align: center;
-          margin: auto;
-          padding: 15px;
+          color: $color-pri-white;
+          padding: 5px 10px;
+          text-align: left;
           text-decoration: none;
-          font-size: 1.4em;
-          font-family: $font-primary;
-        }
-        .menuExpand {
-          display: flex;
-          flex-direction: column;
-          .menuExpandHide {
-            font-size: 1em;
-            padding: 6px !important;
-          }
+          text-transform: uppercase;
+          font-size: 2em;
+          font-weight: 600;
         }
         .menuActive {
-          color: $color-pri-orange;
+          font-weight: 700;
         }
-
       }
+    }
+  }
+  //CSS GÆLDER KUN FOR PC-HEADER (ALM. MENU)
+  @media screen and(min-width: 900px){
+    margin-top: -15px;
+    //Skjuler logo på mobil
+    .logo-mobil{
+      display: none;
+    }
+    //Styler web logo
+    .logo-web{
+      display: block;
+      a{
+        img{
+          display: flex;
+          margin: 5px 30px;
+          height: 60px;
+          padding-top: 25px;
+        }
+      }
+    }
+    //Styler top nav-bar
+    .topnav{
+      .menuknap{
+        display: none;
+      }
+      .topnavContentWrapper {
+        display: block;
+        height: auto;
+        .burgermenuClose{
+          display: none;
+        }
+        .topnavContent {
+          flex-direction: row !important;
+          float: right;
+          top: 48px;
+          right: 35px;
+          .menuActive{
+            font-weight: 700;
+          }
+          //Styler menupunkter
+          a {
+            font-size: 1em;
+            padding: 20px !important;
+            color: $color-pri-white;
+          }
+        }
+      }
+
+    }
+  }
+  @media screen and(min-width: 1200px){
+    a {
+      font-size: 1.2em !important;
     }
   }
 }

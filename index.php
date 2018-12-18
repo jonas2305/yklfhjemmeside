@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/finalStyle.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
     <!--Meta data til sociale medier-->
     <meta property="og:title" content="Rundvisning på vores campingplads - Ore Strand Camping" />
@@ -31,7 +31,7 @@
     <nav class="logo-mobil">
         <figure>
             <a href="index.php" class="logo">
-                <img src="images/logo/logo-02.pngpng" alt="Netværk for yngre kræftramte logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
             </a>
         </figure>
     </nav>
@@ -47,7 +47,7 @@
     <nav class="topnav" id="myTopnav">
         <!--Menuknap til burgermenu-->
         <div class="menuknap">
-            <i class="fas fa-bars"></i>
+            <i id="menuOpen" class="fas fa-bars"></i>
         </div>
         <!--Menu-->
         <div class="topnavContentWrapper">
