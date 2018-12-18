@@ -1,3 +1,22 @@
+html, body {
+  margin: 0px;
+  height: 100% !important; }
 
+body {
+  font-family: "Hind Siliguri", sans-serif; }
+
+h1 {
+  color: #333333;
+  font-size: 3em; }
+
+h2 {
+  color: #0F2F50;
+  font-size: 2em;
+  margin: 5px 0; }
+
+h3 {
+  color: #0F2F50;
+  font-size: 1.5em;
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=finalStyle.css.map */

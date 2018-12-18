@@ -10,3 +10,34 @@ $color-pri-grey: #BFBFBF;
 
 // ---------Font---------
 $font-primary: 'Hind Siliguri', sans-serif;
+
+// SIKRE, AT DER IKKE ER EKSTRA MARGEN
+html, body{
+  margin: 0px;
+  height: 100%!important;
+}
+
+// STYLER AL SKRIFT
+body{
+  font-family: $font-primary;
+}
+
+  // STYLER ALLE H1
+h1{
+  color: $color-pri-black;
+  font-size: 3em;
+}
+
+// STYLER ALLE H2
+h2{
+  color: $color-pri-darkblue;
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+// STYLER ALLE H3
+h3{
+  color: $color-pri-darkblue;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
