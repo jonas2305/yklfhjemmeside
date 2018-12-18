@@ -1,0 +1,85 @@
+//HEADER STYLING - GÆLDER BÅDE MOBIL OG PC
+header {
+  padding-bottom: 15px;
+  //Mobil logo vises og styles
+
+  figure {
+    margin: 0;
+  }
+
+  .logo-mobil {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    img {
+      width: 100px;
+    }
+  }
+  //Web logo skjules
+  .logo-web {
+    display: none;
+  }
+  //Top nav styling
+  .topnav {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 10;
+    .menuknap {
+      font-size: 2.5em;
+      color: $color-pri-darkblue;
+      cursor: pointer;
+    }
+    .topnavContentWrapper {
+      display: none;
+      background-color: rgba(27, 35, 42, 0.8);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      margin: auto;
+      .burgermenuClose {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 2.5em;
+        color: $color-pri-darkblue;
+        cursor: pointer;
+      }
+      .topnavContent {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        a {
+          width: auto;
+          color: $color-pri-darkblue;
+          text-align: center;
+          margin: auto;
+          padding: 15px;
+          text-decoration: none;
+          font-size: 1.4em;
+          font-family: $font-primary;
+        }
+        .menuExpand {
+          display: flex;
+          flex-direction: column;
+          .menuExpandHide {
+            font-size: 1em;
+            padding: 6px !important;
+          }
+        }
+        .menuActive {
+          color: $color-pri-orange;
+        }
+
+      }
+    }
+  }
+}

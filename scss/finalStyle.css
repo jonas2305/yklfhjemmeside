@@ -19,4 +19,69 @@ h3 {
   font-size: 1.5em;
   margin-bottom: 5px; }
 
+header {
+  padding-bottom: 15px; }
+  header figure {
+    margin: 0; }
+  header .logo-mobil {
+    display: block;
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    left: 10px; }
+    header .logo-mobil img {
+      width: 100px; }
+  header .logo-web {
+    display: none; }
+  header .topnav {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 10; }
+    header .topnav .menuknap {
+      font-size: 2.5em;
+      color: #0F2F50;
+      cursor: pointer; }
+    header .topnav .topnavContentWrapper {
+      display: none;
+      background-color: rgba(27, 35, 42, 0.8);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      margin: auto; }
+      header .topnav .topnavContentWrapper .burgermenuClose {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 2.5em;
+        color: #0F2F50;
+        cursor: pointer; }
+      header .topnav .topnavContentWrapper .topnavContent {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        header .topnav .topnavContentWrapper .topnavContent a {
+          width: auto;
+          color: #0F2F50;
+          text-align: center;
+          margin: auto;
+          padding: 15px;
+          text-decoration: none;
+          font-size: 1.4em;
+          font-family: "Hind Siliguri", sans-serif; }
+        header .topnav .topnavContentWrapper .topnavContent .menuExpand {
+          display: flex;
+          flex-direction: column; }
+          header .topnav .topnavContentWrapper .topnavContent .menuExpand .menuExpandHide {
+            font-size: 1em;
+            padding: 6px !important; }
+        header .topnav .topnavContentWrapper .topnavContent .menuActive {
+          color: #E75037; }
+
 /*# sourceMappingURL=finalStyle.css.map */
