@@ -447,5 +447,63 @@ footer {
       margin: 0 !important; }
       .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
         width: 40% !important; } }
+.mainKontakt {
+  padding: 0 10px; }
+  .mainKontakt .kontaktFormularWrapper .kontaktFormularForm {
+    background-color: #0F2F50;
+    padding: 15px; }
+    .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=text], .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=email] {
+        height: 2em;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        margin-bottom: -10px; }
+      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=submit] {
+        width: 50%;
+        margin-left: 50%;
+        margin-bottom: 0; }
+  .mainKontakt .kontaktFormularWrapper .kontaktFormularImg {
+    margin: 15px auto; }
+    .mainKontakt .kontaktFormularWrapper .kontaktFormularImg img {
+      width: 100%; }
+  .mainKontakt .kontaktModBestyrelsen {
+    background-color: #F2F2F2;
+    margin: 0 -10px;
+    padding: 10px 10px; }
+    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
+      background-color: #0F2F50;
+      padding: 20px;
+      margin: 20px auto; }
+      .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson h3 {
+        margin: 0; }
+      .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p {
+        margin: 0; }
+        .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p a {
+          color: #FFFFFF; }
+
+@media screen and (min-width: 900px) {
+  .mainKontakt .kontaktFormularWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px; }
+    .mainKontakt .kontaktFormularWrapper .kontaktFormularForm {
+      padding: 20px !important;
+      width: 45%; }
+      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form {
+        margin: auto; }
+    .mainKontakt .kontaktFormularWrapper .kontaktFormularImg {
+      width: 45%;
+      margin: 0 !important; }
+  .mainKontakt .kontaktModBestyrelsen {
+    display: flex;
+    padding: 35px !important;
+    justify-content: space-between; }
+    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
+      width: 25%;
+      margin: 0 !important; } }
 
 /*# sourceMappingURL=finalStyle.css.map */

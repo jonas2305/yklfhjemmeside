@@ -1,0 +1,81 @@
+.mainKontakt{
+  padding: 0 10px;
+  .kontaktFormularWrapper{
+    .kontaktFormularForm{
+      background-color: $color-pri-darkblue;
+      padding: 15px;
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        input[type=text], input[type=email] {
+          height: 2em;
+          border-radius: 5px;
+          border: none;
+          padding: 5px;
+          margin-bottom: -10px
+        }
+        input[type=submit] {
+          width: 50%;
+          margin-left: 50%;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .kontaktFormularImg{
+      margin: 15px auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .kontaktModBestyrelsen{
+    background-color: $color-pri-lightgrey;
+    margin: 0 -10px;
+    padding: 10px 10px;
+    .kontaktModBestyrelsenPerson{
+      background-color: $color-pri-darkblue;
+      padding: 20px;
+      margin: 20px auto;
+      h3{
+        margin: 0;
+      }
+      p{
+        margin: 0;
+        a{
+          color: $color-pri-white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 900px){
+  .mainKontakt {
+    .kontaktFormularWrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      .kontaktFormularForm {
+        padding: 20px !important;
+        width: 45%;
+        form {
+          margin: auto;
+        }
+      }
+      .kontaktFormularImg {
+        width: 45%;
+        margin: 0 !important;
+      }
+    }
+    .kontaktModBestyrelsen{
+      display: flex;
+      padding: 35px!important;
+      justify-content: space-between;
+      .kontaktModBestyrelsenPerson{
+        width: 25%;
+        margin: 0!important;
+      }
+    }
+  }
+}
