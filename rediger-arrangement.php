@@ -53,44 +53,88 @@ $arrangement = mysqli_fetch_assoc($arrangementQuery);
 
 <body>
 
+<header>
+    <!--Logo til Mobil-->
+    <nav class="logo-mobil">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Logo til WEB-->
+    <nav class="logo-web">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Selve navigationen-->
+    <nav class="topnav" id="myTopnav">
+        <!--Menuknap til burgermenu-->
+        <div class="menuknap">
+            <i id="menuOpen" class="fas fa-bars"></i>
+        </div>
+        <!--Menu-->
+        <div class="topnavContentWrapper">
+            <!--Lukkeknap til burgermenu-->
+            <i class="fas fa-times burgermenuClose"></i>
+            <!--Menupunkter-->
+            <div class="topnavContent">
+                <a class="menuActive" href="index.php">Forside</a>
+                <a href="arrangementer.php">Arrangementer</a>
+                <a href="hvemervi.php">Hvem er vi?</a>
+                <a href="sponsorer.php">Sponsorer</a>
+                <a href="kontakt.php">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <main>
-    <h1>Rediger arrangement</h1>
-    <h2><a href = "logud.php">Sign Out</a></h2>
-    <h2><a href = "admin-arrangementer.php">Annuller</a></h2>
+    <div class="log-ud">
+        <a href = "admin-arrangementer.php">
+            <button class="btnReg log-ud-btn">Annuller</button>
+        </a>
+        <a href = "logud.php">
+            <button class="btnReg log-ud-btn">Log ud</button>
+        </a>
+    </div>
 
+    <div class="flex-wrapper-arrangement">
     <section class="opret-arrangement">
+        <h1>Rediger arrangement</h1>
         <form id="opret-arrangement" method ="post" action="rediger-arrangement.php" enctype="multipart/form-data">
-            <label for="title">Titel</label>
-            <input class="" type="text" name="yklf_titel" id="titel" placeholder="" value="<?php echo $arrangement["yklf_titel"]; ?>">
 
-            <label for="dagtekst">Ugedag</label>
-            <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="" value="<?php echo $arrangement["yklf_dagtekst"]; ?>">
+            <label for="titel">Hvad hedder arrangementet?</label><br>
+            <input class="" type="text" name="yklf_titel" id="titel" placeholder="Overskrift" value="<?php echo $arrangement["yklf_titel"]; ?>"><br><br>
 
-            <label for="dagtal">d.</label>
-            <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="" value="<?php echo $arrangement["yklf_dagtal"]; ?>">
+            <label>Hvornår afholdes arrangementet?</label><br>
+            <div class="opret-arrangement-tidspunkt-wrapper">
+                <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="Ugedag" value="<?php echo $arrangement["yklf_dagtekst"]; ?>">
+                <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="Dato (DD)" value="<?php echo $arrangement["yklf_dagtal"]; ?>">
+                <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="Måned (MM)" value="<?php echo $arrangement["yklf_maaned"]; ?>">
+                <input class="" type="text" name="yklf_aar" id="aar" placeholder="År (YYYY)" value="<?php echo $arrangement["yklf_aar"]; ?>">
+                <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="Tidspunkt (XX:XX)" value="<?php echo $arrangement["yklf_tidspunkt"]; ?>"><br><br>
+            </div>
 
-            <label for="maaned">Måned</label>
-            <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="" value="<?php echo $arrangement["yklf_maaned"]; ?>">
+            <label for="kortbeskrivelse">Lav en kort beskrivelse af arrangementet.</label><br>
+            <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="Kort beskrivelse" value="<?php echo $arrangement["yklf_kortbeskrivelse"]; ?>"><br><br>
 
-            <label for="aar">År</label>
-            <input class="" type="text" name="yklf_aar" id="aar" placeholder="" value="<?php echo $arrangement["yklf_aar"]; ?>">
-
-            <label for="tidspunkt">Tidspunkt</label>
-            <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="" value="<?php echo $arrangement["yklf_tidspunkt"]; ?>">
-
-            <label for="kortbeskrivelse">Kort beskrivelse</label>
-            <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="" value="<?php echo $arrangement["yklf_kortbeskrivelse"]; ?>">
-
-            <label for="langbeskrivelse">Lang beskrivelse</label>
-            <input class="" type="text" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="" value="<?php echo $arrangement["yklf_langbeskrivelse"]; ?>">
+            <label for="langbeskrivelse">Lav en længere beskrivelse af arrangementet.</label><br>
+            <textarea class="" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="Lang beskrivelse" value=""><?php echo $arrangement["yklf_langbeskrivelse"]; ?></textarea><br><br>
 
             <input type="hidden" name="yklf_id" value="<?php echo $arrangement["yklf_id"]; ?>">
-            <button type="submit" class="">Gem ændringer</button>
+            <button type="submit" class="btnReg">Gem ændringer</button>
 
         </form>
     </section>
+    </div>
 </main>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

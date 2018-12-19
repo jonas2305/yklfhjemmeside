@@ -133,30 +133,26 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
             <h1>Opret arrangement</h1>
             <form id="opret-arrangement" method ="post" action="opret-arrangement.php" enctype="multipart/form-data">
 
-                    <label for="titel">Hvad hedder arrangementet?</label>
-                    <input class="" type="text" name="yklf_titel" id="titel" placeholder="" value="">
+                    <label for="titel">Hvad hedder arrangementet?</label><br>
+                    <input class="" type="text" name="yklf_titel" id="titel" placeholder="Overskrift" value=""><br><br>
 
-                    <label>Hvornår afholdes arrangementet?</label>
-                    <label for="dagtekst">Ugedag</label>
-                    <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="" value="">
-                    <label for="dagtal">d.</label>
-                    <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="" value="">
-                    <label for="maaned">Måned</label>
-                    <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="" value="">
-                    <label for="aar">År</label>
-                    <input class="" type="text" name="yklf_aar" id="aar" placeholder="" value="">
-                    <label for="tidspunkt">Tidspunkt</label>
-                    <label>kl.</label>
-                    <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="" value="">
+                    <label>Hvornår afholdes arrangementet?</label><br>
+                    <div class="opret-arrangement-tidspunkt-wrapper">
+                        <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="Ugedag" value="">
+                        <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="Dato (DD)" value="">
+                        <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="Måned (MM)" value="">
+                        <input class="" type="text" name="yklf_aar" id="aar" placeholder="År (YYYY)" value="">
+                        <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="Tidspunkt (XX:XX)" value=""><br><br>
+                    </div>
 
-                    <label for="kortbeskrivelse">Lav en kort beskrivelse af arrangementet.</label>
-                    <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="" value="">
+                    <label for="kortbeskrivelse">Lav en kort beskrivelse af arrangementet.</label><br>
+                    <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="Kort beskrivelse" value=""><br><br>
 
-                    <label for="langbeskrivelse">Lav en længere beskrivelse af arrangementet.</label>
-                    <input class="" type="text" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="" value="">
+                    <label for="langbeskrivelse">Lav en længere beskrivelse af arrangementet.</label><br>
+                    <textarea class="" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="Lang beskrivelse" value=""></textarea><br><br>
 
-                    <label for="Filename">Upload et billede til arrangementet.</label>
-                    <input class="" type="file" name="Filename" id="thumbnail" placeholder="" value="">
+                    <label for="Filename">Upload et billede til arrangementet.</label><br>
+                    <input class="" type="file" name="Filename" id="thumbnail" placeholder="" value=""><br><br>
 
                     <button type="submit" class="btnReg">Opret arrangement</button>
 
