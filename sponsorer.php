@@ -82,6 +82,101 @@
             <img src="images/sidebilleder/holdbilledeStafetForLivet.jpg" alt="holdbillede Netværk for yngre kræftramte Stafet for Livet">
         </div>
     </section>
+    <!--EKSEMPLER PÅ SPONSORATER-->
+    <section class="sponsorerEksempler">
+        <h1>Eksempler på sponsorater</h1>
+        <div class="sponsorerEksemplerFlex">
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/pengeSponsor.jpg" alt="sponsorat Netværk for yngre kræftramte">
+                <h3>Stafet for livet</h3>
+                <p class="pWhite">Støttet af: Lions Sydlolland<br><br>
+                    Donation til afvikling af Stafet for livet.</p>
+            </div>
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/wellnessSponsor.jpg" alt="wellnesstur Netværk for yngre kræftramte">
+                <h3>Wellnesstur</h3>
+                <p class="pWhite">Støttet af: Tryg Fonden<br><br>
+                    Wellnesstur til Nordtyskland for alle foreningens medlemmer.</p>
+            </div>
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/taskeSponsor.jpg" alt="taske Netværk for yngre kræftramte">
+                <h3>Tasker til medlemmer</h3>
+                <p class="pWhite">Støttet af: Halstedhus Efterskole<br><br>
+                    Donation af tasker til alle medlemmer.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sponsorerLogo">
+        <h1>De støtter os</h1>
+        <div class="sponsorerLogoFlex">
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/foto.jb.logo-kopi.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/Polite-Media-Logo-510-x-116.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/medieguru.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/Polite-Media-Logo-510-x-116.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/medieguru.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/foto.jb.logo-kopi.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/foto.jb.logo-kopi.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/Polite-Media-Logo-510-x-116.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/medieguru.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/medieguru.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/foto.jb.logo-kopi.png">
+            </div>
+            <div class="logoDiv">
+                <img src="images/sidebilleder/sponsorerLogo/Polite-Media-Logo-510-x-116.png">
+            </div>
+        </div>
+    </section>
+    <section class="sponsorerStotOs">
+        <h1>Vil du støtte os?</h1>
+        <div class="sponsorerStotOsKontakt">
+            <div class="sponsorerStotOsKontaktFormular">
+               <form>
+                   <input type="text" name="virksomhed" placeholder="Virksomhed"><br>
+                   <input type="email" name="mail" placeholder="Mail"><br>
+                   <input type="text" name="besked" placeholder="Besked"><br>
+                   <input type="submit" class="btnReg" value="JEG VIL STØTTE">
+               </form>
+            </div>
+            <div class="sponsorerStotOsKontaktInfo">
+                <div class="sponsorerStotOsKontaktInfoMorten">
+                    <img src="images/portraetter/mortenPortraetKvadratisk.jpg" alt="morten portræt">
+                    <div>
+                        <h3>Morten Kristiansen</h3>
+                        <p class="pWhite">
+                            Kasserer/sponsoransvarlig <br><br>
+                            Ønsker du at støtte os, eller har forslag til, hvordan vi kunne gøre?
+                            Kontakt mig endelig!
+                        </p>
+                    </div>
+                </div>
+                <div class="sponsorerStotOsKontaktInfoKnapper">
+                    <a href="mailto:morten@yklf.dk" class="btnSmall">MAIL</a>
+                    <a href="tel:+4512345678" class="btnSmall">TELEFON</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 

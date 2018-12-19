@@ -1,0 +1,164 @@
+.mainSponsorer{
+  padding: 0 10px;
+  .sponsorerIntro{
+    display: flex;
+    flex-direction: column;
+    .sponsorerIntroTekst{
+      width: 100%;
+    }
+    .sponsorerIntroBillede{
+      img {
+        width: auto;
+        max-height: 250px;
+        margin: auto;
+      }
+    }
+  }
+  .sponsorerEksempler{
+    background-color: $color-pri-lightgrey;
+    margin: 0 -10px;
+    padding: 10px 10px;
+    .sponsorerEksemplerAfsnit{
+      background-color: $color-pri-darkblue;
+      padding: 20px;
+      margin: 20px auto;
+      h3{
+        margin: 0;
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+  .sponsorerLogo{
+    .sponsorerLogoFlex{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .logoDiv{
+        border: 3px solid $color-pri-darkgrey;
+        width: 40%;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 0;
+        img{
+          width: auto;
+          height: auto;
+          max-width: 90%!important;
+          max-height: 90%!important;
+        }
+      }
+    }
+  }
+  .sponsorerStotOs{
+    .sponsorerStotOsKontakt{
+      .sponsorerStotOsKontaktFormular{
+        background-color: $color-pri-darkblue;
+        padding: 15px;
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          input[type=text], input[type=email] {
+            height: 2em;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-bottom: -10px
+          }
+          input[type=submit] {
+            width: 50%;
+            margin-left: 50%;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .sponsorerStotOsKontaktInfo{
+        background-color: $color-pri-darkblue;
+        padding: 15px;
+        margin: 15px auto;
+        .sponsorerStotOsKontaktInfoMorten{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          img{
+            width: 25%;
+            height: 25%;
+            margin-right: 5%;
+          }
+          h3{
+            font-size: 1.1em;
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+        .sponsorerStotOsKontaktInfoKnapper{
+          width: 60%;
+          margin: 10px auto auto auto;
+          justify-content: space-between;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 900px){
+  .sponsorerIntro{
+    flex-direction: row!important;
+    margin: 35px 25px;
+    align-items: center;
+    justify-content: space-between;
+    .sponsorerIntroTekst{
+      width: 40%!important;
+      h4{
+        font-size: 1.6em;
+      }
+    }
+    .sponsorerIntroBillede{
+      width: 40%!important;
+    }
+  }
+  .sponsorerEksempler{
+    padding: 35px!important;
+    .sponsorerEksemplerFlex{
+      display: flex;
+      justify-content: space-between;
+      .sponsorerEksemplerAfsnit{
+        width: 25%;
+        margin: 0!important;
+      }
+    }
+
+  }
+  .sponsorerLogo{
+    .sponsorerLogoFlex{
+      .logoDiv{
+        width: 30% !important;
+        height: 10em!important;
+      }
+    }
+  }
+  .sponsorerStotOsKontakt{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:35px;
+    .sponsorerStotOsKontaktFormular{
+      padding: 20px!important;
+      width: 45%;
+      vertical-align: center;
+    }
+    .sponsorerStotOsKontaktInfo{
+      padding: 20px!important;
+      width: 45%;
+      margin: 0!important;
+      .sponsorerStotOsKontaktInfoKnapper{
+        width: 40% !important;
+      }
+    }
+  }
+}
