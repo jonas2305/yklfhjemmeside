@@ -54,7 +54,8 @@ p {
     text-shadow: -2px 2px 10px #FFFFFF; }
 
 .btnReg {
-  background-color: #EFBA1A;
+  background-color: #EFBA1A !important;
+  border: none;
   padding: 10px 30px;
   color: #0F2F50;
   text-decoration: none;
@@ -62,8 +63,19 @@ p {
   font-weight: 600;
   border-radius: 5px;
   box-shadow: -3px 3px #333333;
-  margin: 3px; }
+  margin: 0 0 20px 3px;
+  position: relative; }
+  .btnReg:active {
+    box-shadow: none;
+    top: 3px;
+    right: 3px; }
 
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3em; }
+
+  .sideTitel {
+    padding: 4.5em 0 0 35px; } }
 .arrangement-section {
   background-color: #F2F2F2; }
   .arrangement-section .arrangement {
@@ -78,12 +90,10 @@ p {
     .arrangement-section .arrangement p {
       color: #FFFFFF; }
 
-@media screen and (min-width: 900px) {
-  h1 {
-    font-size: 3em; }
-
-  .sideTitel {
-    padding: 4.5em 0 0 35px; } }
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: auto; } }
 header {
   background-color: #0F2F50;
   display: flex;
@@ -143,7 +153,7 @@ header {
           font-weight: 700; }
   @media screen and (min-width: 900px) {
     header {
-      padding-bottom: 15px; }
+      padding-bottom: 10px; }
       header .logo-mobil {
         display: none; }
       header .logo-web {
@@ -180,6 +190,21 @@ header {
     header a {
       font-size: 1.2em !important; } }
 
+footer {
+  background-color: #0F2F50;
+  padding: 10px; }
+  footer p {
+    line-height: 1.3em; }
+  footer a {
+    color: #FFFFFF; }
+
+@media screen and (min-width: 700px) {
+  footer {
+    display: flex;
+    padding: 100px;
+    justify-content: space-between; }
+    footer .footerSectionLeft, footer .footerSectionMiddle, footer .footerSectionRight {
+      width: 30%; } }
 .mainHvemErVi {
   padding: 0 10px; }
   .mainHvemErVi .hvemErViIntro {
@@ -223,5 +248,65 @@ header {
         margin: 0; }
       .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem p {
         margin: 0; }
+  .mainHvemErVi .hvemErViArrangementer .hvemErViArrangementerLinkWrapper {
+    margin: 30px 0; }
+
+@media screen and (min-width: 900px) {
+  .hvemErViIntro {
+    flex-direction: row !important;
+    margin: 15px 25px;
+    align-items: center;
+    justify-content: space-between; }
+    .hvemErViIntro .hvemErViIntroTekst {
+      width: 40% !important; }
+      .hvemErViIntro .hvemErViIntroTekst h4 {
+        font-size: 1.6em; }
+    .hvemErViIntro .hvemErViIntroVideo {
+      width: 40% !important; }
+
+  .hvemErViOmForeningen {
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .hvemErViOmForeningen .hvemErViOmForeningenTekst {
+      width: 55%; }
+      .hvemErViOmForeningen .hvemErViOmForeningenTekst p {
+        font-size: 1.2em; }
+    .hvemErViOmForeningen img {
+      max-height: none !important;
+      width: 40% !important;
+      margin: 0 !important; }
+
+  .hvemErViCitatWrapper {
+    width: 100%;
+    background-color: #0F2F50; }
+    .hvemErViCitatWrapper .hvemErViCitat {
+      width: 50%;
+      margin: auto !important; }
+      .hvemErViCitatWrapper .hvemErViCitat img {
+        margin-left: 10%;
+        width: 25%;
+        height: 25%; }
+
+  .hvemErViModMedlemmerne {
+    display: flex;
+    padding: 35px !important;
+    justify-content: space-between; }
+    .hvemErViModMedlemmerne .hvemErViMedlem {
+      width: 25%;
+      margin: 0 !important; }
+
+  .hvemErViArrangementer {
+    display: flex;
+    padding: 35px;
+    align-items: center; }
+    .hvemErViArrangementer h1 {
+      margin: 0; }
+    .hvemErViArrangementer img {
+      width: 30% !important;
+      height: 30%;
+      margin-left: 5%; } }
 
 /*# sourceMappingURL=finalStyle.css.map */

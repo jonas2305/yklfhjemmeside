@@ -94,7 +94,8 @@ p{
 
 }
 .btnReg{
-  background-color: $color-pri-yellow;
+  background-color: $color-pri-yellow!important;
+  border: none;
   padding: 10px 30px;
   color: $color-pri-darkblue;
   text-decoration: none;
@@ -102,7 +103,13 @@ p{
   font-weight: 600;
   border-radius: 5px;
   box-shadow: -3px 3px $color-pri-black;
-  margin: 3px;
+  margin: 0 0 20px 3px;
+  position: relative;
+  &:active{
+    box-shadow: none;
+    top: 3px;
+    right: 3px;
+  }
 }
 .btnBig{
 
@@ -144,5 +151,14 @@ p{
     p {
       color: $color-pri-white;
     }
+  }
+}
+
+
+//FORSØG MED CENTRERING AF SIDEINDHOLD OVER 1200 PX BREDDE
+@media screen and(min-width: 1200px){
+  body {
+    width: 1200px;
+    margin: auto;
   }
 }

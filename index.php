@@ -58,7 +58,6 @@
                 <a class="menuActive" href="index.php">Forside</a>
                 <a href="arrangementer.php">Arrangementer</a>
                 <a href="hvemervi.php">Hvem er vi?</a>
-                <a href="blog.php">Blog</a>
                 <a href="sponsorer.php">Sponsorer</a>
                 <a href="kontakt.php">Kontakt</a>
             </div>

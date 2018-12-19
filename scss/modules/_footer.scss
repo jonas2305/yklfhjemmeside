@@ -1,0 +1,22 @@
+footer{
+  background-color: $color-pri-darkblue;
+  padding: 10px;
+  p{
+    line-height: 1.3em;
+  }
+  a{
+    color: $color-pri-white;
+  }
+}
+
+@media screen and(min-width: 700px) {
+  footer{
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+    .footerSectionLeft, .footerSectionMiddle, .footerSectionRight{
+      width: 30%;
+    }
+  }
+  
+}

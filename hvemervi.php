@@ -58,7 +58,6 @@
                 <a class="menuActive" href="index.php">Forside</a>
                 <a href="arrangementer.php">Arrangementer</a>
                 <a href="hvemervi.php">Hvem er vi?</a>
-                <a href="blog.php">Blog</a>
                 <a href="sponsorer.php">Sponsorer</a>
                 <a href="kontakt.php">Kontakt</a>
             </div>
@@ -85,34 +84,38 @@
     </section>
     <!--OM FORENINGEN / HISTORIE-->
     <section class="hvemErViOmForeningen">
-        <h1>En forening for dig</h1>
-        <p>Hvert år bliver yngre mennesker ramt af kræft. Mange erfarer i den forbindelse, at det ikke altid er lige let at dele de svære tanker og følelser, 
-            der ofte følger med sygdommen, med sine nærmeste. Mange unge kræftpatienter har også børn eller drømme om at få det og også her kan man have behov
-            for at vende sine overvejelser med andre ligestillede.<br><br>
-            Det kan være særlig hårdt eller ensomt at blive ramt af kræft i en ung alder. Ved at tale med andre kræftpatienter om din sygdom og dit forløb kan
-            det komme til at fylde mindre.<br><br>
-            Erfaringer viser dels, at man ved at deltage i en netværksgruppe kan få det bedre mentalt og at følelsen af at være alene, kan mindskes betydeligt.<br><br>
-            <strong>Jubilæum</strong><br>
-            Vi startede foreningen tilbage i sommeren 2009, hvorfor vi snart kan fejre 10 års jubilæum. Foreningen blev grundlagt på baggrund af et savn om et
-            netværk af ligestillede mennesker, der alle vidste, hvad det dreje om. Nogle der også oplever, eller har oplevet, det på egen krop, og kan give rigtige
-            erfaringer videre, og bare lytte til hvad man nu en gang har på hjertet.<br>
-            De 10 år er vi enormt stolte af, og vi bestræber os hårdt på at tage mindst 10 mere.<br><br>
-            <strong>Det gør vi</strong><br>
-            Vi arrangerer forskellige aktiviteter og tema aftener. Man behøver ikke at sige noget hver gang. Det kan være givende bare at lytte til andres
-            beretninger. En oplevelse af ikke at være den eneste, der har oplevet at blive ramt af kræft i en ung alder. Der er en naturlig vekslen mellem alvor,
-            fordybelse, hygge og sjov.<br>
-            Der er naturligvis tavshedspligt i gruppen.
-        </p>
+        <div class="hvemErViOmForeningenTekst">
+            <h1>En forening for dig</h1>
+            <p>Hvert år bliver yngre mennesker ramt af kræft. Mange erfarer i den forbindelse, at det ikke altid er lige let at dele de svære tanker og følelser,
+                der ofte følger med sygdommen, med sine nærmeste. Mange unge kræftpatienter har også børn eller drømme om at få det og også her kan man have behov
+                for at vende sine overvejelser med andre ligestillede.<br><br>
+                Det kan være særlig hårdt eller ensomt at blive ramt af kræft i en ung alder. Ved at tale med andre kræftpatienter om din sygdom og dit forløb kan
+                det komme til at fylde mindre.<br><br>
+                Erfaringer viser dels, at man ved at deltage i en netværksgruppe kan få det bedre mentalt og at følelsen af at være alene, kan mindskes betydeligt.<br><br>
+                <strong>Jubilæum</strong><br>
+                Vi startede foreningen tilbage i sommeren 2009, hvorfor vi snart kan fejre 10 års jubilæum. Foreningen blev grundlagt på baggrund af et savn om et
+                netværk af ligestillede mennesker, der alle vidste, hvad det dreje om. Nogle der også oplever, eller har oplevet, det på egen krop, og kan give rigtige
+                erfaringer videre, og bare lytte til hvad man nu en gang har på hjertet.<br>
+                De 10 år er vi enormt stolte af, og vi bestræber os hårdt på at tage mindst 10 mere.<br><br>
+                <strong>Det gør vi</strong><br>
+                Vi arrangerer forskellige aktiviteter og tema aftener. Man behøver ikke at sige noget hver gang. Det kan være givende bare at lytte til andres
+                beretninger. En oplevelse af ikke at være den eneste, der har oplevet at blive ramt af kræft i en ung alder. Der er en naturlig vekslen mellem alvor,
+                fordybelse, hygge og sjov.<br>
+                Der er naturligvis tavshedspligt i gruppen.
+            </p>
+        </div>
         <img src="images/sidebilleder/mimi-thian-737626-unsplash.jpg">
     </section>
-    <section class="hvemErViCitat">
-        <div>
-            <h3>Stine Hansen</h3>
-            <p class="pWhite">"Jeg har kræft i bugspytkirtlen, og trækker så meget som muligt på forneingen. Et utal af gode snakke har hjulpet mig videre i hverdagen,
-                og nu vil jeg give noget igen. "</p>
-        </div>
-        <img src="images/portraetter/tinaPortraetKvadratisk.jpg" alt="portræt Netværk for yngre kræftramte">
-    </section>
+    <div class="hvemErViCitatWrapper">
+        <section class="hvemErViCitat">
+            <div>
+                <h3>Stine Hansen</h3>
+                <p class="pWhite">"Jeg har kræft i bugspytkirtlen, og trækker så meget som muligt på forneingen. Et utal af gode snakke har hjulpet mig videre i hverdagen,
+                    og nu vil jeg give noget igen. "</p>
+            </div>
+            <img src="images/portraetter/tinaPortraetKvadratisk.jpg" alt="portræt Netværk for yngre kræftramte">
+        </section>
+    </div>
     <section class="hvemErViModMedlemmerne">
         <div class="hvemErViMedlem">
             <img src="images/portraetter/mortenPortraetKvadratisk.jpg" alt="portræt Netværk for yngre kræftramte">
@@ -130,20 +133,45 @@
         </div>
         <div class="hvemErViMedlem">
             <img src="images/portraetter/tinaPortraetKvadratisk.jpg" alt="portræt Netværk for yngre kræftramte">
-            <h3>Morten Kristiansen</h3>
+            <h3>Stine Hansen</h3>
             <p class="pWhite">MEDLEM I 3+2 ÅR<br><br>
                 Jeg har kræft i bugspytkirtlen, og trækker så meget som muligt på forneingen. Et utal af gode snakke har hjulpet mig videre i hverdagen, og
                 nu vil jeg give noget igen. </p>
         </div>
     </section>
     <section class="hvemErViArrangementer">
-        <h1>Vil du møde medlemmerne?</h1>
-        <p>Hos os kan du møde ligestillede mennesker, der står med de samme bekymringer. Kom og snak, lyt og få oplevelser, der kan hjælpe dig i hverdagen, 
-            eller give et afbræk fra vanerne. </p>
-        <a class="btnReg" href="arrangementer.php">Se vores arrangementer</a>
+        <div>
+            <h1>Vil du møde medlemmerne?</h1>
+            <h4>Hos os kan du møde ligestillede mennesker, der står med de samme bekymringer. Kom og snak, lyt og få oplevelser, der kan hjælpe dig i hverdagen,
+                eller give et afbræk fra vanerne. </h4>
+            <div class="hvemErViArrangementerLinkWrapper">
+                <a class="btnReg" href="arrangementer.php">Se vores arrangementer</a>
+            </div>
+        </div>
         <img src="images/sidebilleder/mimi-thian-737626-unsplash.jpg">
     </section>
 </main>
+
+<!--FOOTER SEKTION-->
+<footer>
+    <div class="footerSectionLeft">
+        <h3>Adresse</h3>
+        <p class="pWhite">Frivillig Center Lolland<br>
+            Sdr. Boulevard 82 A <br>
+            4930 Maribo<br></p>
+        <a href="https://goo.gl/maps/CBCQgttvir42" target="_blank">Find vej</a>
+    </div>
+    <div class="footerSectionMiddle">
+        <h3>Kontakt</h3>
+        <p class="pWhite">Kontaktperson:<br>
+            Neel Back Lund <br>
+            <a href="mailto:nbl@yklf.dk">nbl@yklf.dk</a> <br>
+            <a href="tel:+4551512249">51 51 22 49</a> <br></p>
+    </div>
+    <div class="footerSectionRight">
+        <h3>Næste Arrangement</h3>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

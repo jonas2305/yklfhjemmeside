@@ -56,6 +56,82 @@
         margin: 0;
       }
     }
-
   }
+  .hvemErViArrangementer{
+    .hvemErViArrangementerLinkWrapper{
+      margin: 30px 0;
+    }
+  }
+}
+
+@media screen and(min-width: 900px){
+  .hvemErViIntro{
+    flex-direction: row!important;
+    margin: 15px 25px;
+    align-items: center;
+    justify-content: space-between;
+    .hvemErViIntroTekst{
+      width: 40%!important;
+      h4{
+        font-size: 1.6em;
+      }
+    }
+    .hvemErViIntroVideo{
+      width: 40%!important;
+    }
+  }
+  .hvemErViOmForeningen{
+    margin: 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .hvemErViOmForeningenTekst{
+      width: 55%;
+      p{
+        font-size: 1.2em;
+      }
+    }
+    img{
+      max-height: none!important;
+      width: 40%!important;
+      margin: 0!important;
+    }
+  }
+  .hvemErViCitatWrapper {
+    width: 100%;
+    background-color: $color-pri-darkblue;
+    .hvemErViCitat {
+      width: 50%;
+      margin: auto !important;
+      img{
+        margin-left: 10%;
+        width: 25%;
+        height: 25%;
+      }
+    }
+  }
+  .hvemErViModMedlemmerne{
+    display: flex;
+    padding: 35px!important;
+    justify-content: space-between;
+    .hvemErViMedlem{
+      width: 25%;
+      margin: 0!important;
+    }
+  }
+  .hvemErViArrangementer{
+    display: flex;
+    padding: 35px;
+    align-items: center;
+    h1{
+      margin: 0;
+    }
+    img{
+      width: 30%!important;
+      height: 30%;
+      margin-left: 5%;
+    }
+  }
+
 }
