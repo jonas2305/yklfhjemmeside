@@ -19,6 +19,20 @@ h3 {
   font-size: 1.5em;
   margin-bottom: 5px; }
 
+.arrangement-section {
+  background-color: #F2F2F2; }
+  .arrangement-section .arrangement {
+    padding: 5%;
+    margin: 10% 0 10% 0;
+    background-color: #0F2F50; }
+    .arrangement-section .arrangement img {
+      width: 100% !important;
+      height: auto !important; }
+    .arrangement-section .arrangement h3 {
+      color: #E75037; }
+    .arrangement-section .arrangement p {
+      color: #FFFFFF; }
+
 header {
   padding-bottom: 15px;
   background-color: #0F2F50; }

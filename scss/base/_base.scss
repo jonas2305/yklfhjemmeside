@@ -7,6 +7,7 @@ $color-pri-orange: #E75037;
 $color-pri-yellow: #EFBA1A;
 $color-pri-white: #FFFFFF;
 $color-pri-grey: #BFBFBF;
+$color-pri-lightgrey: #F2F2F2;
 
 // ---------Font---------
 $font-primary: 'Hind Siliguri', sans-serif;
@@ -40,4 +41,27 @@ h3{
   color: $color-pri-darkblue;
   font-size: 1.5em;
   margin-bottom: 5px;
+}
+
+.arrangement-section {
+  background-color: $color-pri-lightgrey;
+
+  .arrangement {
+    padding: 5%;
+    margin: 10% 0 10% 0;
+    background-color: $color-pri-darkblue;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    h3 {
+      color: $color-pri-orange;
+    }
+
+    p {
+      color: $color-pri-white;
+    }
+  }
 }
