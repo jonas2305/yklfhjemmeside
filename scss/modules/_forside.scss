@@ -1,0 +1,48 @@
+.forside-slider{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+
+  background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .forside-slider-tekst{
+//    width: 30vw;
+    margin-left: 8vw;
+
+    h1{
+      color:$color-pri-white;
+      text-shadow: #333333 2px 2px 2px;
+      font-size: 2em;
+      margin: 0;
+    }
+  }
+}
+
+.blaa-bar{
+  padding: 20px 0 45px 0;
+//  margin-top: -40px;
+//  height: 20vh;
+  background-color: $color-pri-darkblue;
+
+  h1{
+    color: $color-pri-orange !important;
+  }
+
+  .blaa-bar-indhold{
+//    display: flex;
+//    justify-content: flex-start;
+//    align-items: flex-end;
+    p{
+//      width: 60vw;
+      color: $color-pri-white;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.naeste-arrangementer{
+  background-color: $color-pri-lightgrey;
+}

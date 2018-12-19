@@ -244,6 +244,34 @@ footer {
     justify-content: space-between; }
     footer .footerSectionLeft, footer .footerSectionMiddle, footer .footerSectionRight {
       width: 30%; } }
+.forside-slider {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .forside-slider .forside-slider-tekst {
+    margin-left: 8vw; }
+    .forside-slider .forside-slider-tekst h1 {
+      color: #FFFFFF;
+      text-shadow: #333333 2px 2px 2px;
+      font-size: 2em;
+      margin: 0; }
+
+.blaa-bar {
+  padding: 20px 0 45px 0;
+  background-color: #0F2F50; }
+  .blaa-bar h1 {
+    color: #E75037 !important; }
+  .blaa-bar .blaa-bar-indhold p {
+    color: #FFFFFF;
+    font-size: 1.5em; }
+
+.naeste-arrangementer {
+  background-color: #F2F2F2; }
+
 .mainHvemErVi {
   padding: 0 10px; }
   .mainHvemErVi .hvemErViIntro {
@@ -651,6 +679,34 @@ footer {
       margin: 0 !important; }
       .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
         width: 40% !important; } }
+.forside-slider {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .forside-slider .forside-slider-tekst {
+    margin-left: 8vw; }
+    .forside-slider .forside-slider-tekst h1 {
+      color: #FFFFFF;
+      text-shadow: #333333 2px 2px 2px;
+      font-size: 2em;
+      margin: 0; }
+
+.blaa-bar {
+  padding: 20px 0 45px 0;
+  background-color: #0F2F50; }
+  .blaa-bar h1 {
+    color: #E75037 !important; }
+  .blaa-bar .blaa-bar-indhold p {
+    color: #FFFFFF;
+    font-size: 1.5em; }
+
+.naeste-arrangementer {
+  background-color: #F2F2F2; }
+
 .login-main {
   display: flex;
   justify-content: center;
