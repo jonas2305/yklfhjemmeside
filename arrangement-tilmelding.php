@@ -71,50 +71,41 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
     </nav>
 </header>
 
-<main>
+<main class="mainArrangmentTilmelding">
 
     <section class="sideTitel">
-        <h1>Arrangementer</h1>
+        <h1>Arrangement titel</h1>
     </section>
 
-    <section class="sponsorerIntro">
-        <div class="sponsorerIntroTekst">
-            <h4>Igennem forskellige arrangementer møder du ligestillede mennesker i øjenhøjde, som både kan hjælpe dig, og har brug for din hjælp.
-                <br><br>
-                Kom og snak, lyt og få oplevelser, der hjælper og giver afbræk fra det du kender.
-                <br>
-                <span class="bold">Du er ikke alene.</span>
-                <br><br>
-                Herunder kan du se vores kommens arrangementer. Klik på dem, og tilmeld dig.
-            </h4>
-        </div>
-        <div class="sponsorerIntroBillede">
-            <img src="images/sidebilleder/holdbilledeStafetForLivet.jpg" alt="holdbillede Netværk for yngre kræftramte Stafet for Livet">
-        </div>
-    </section>
-
-    <div class="admin-arrangementer">
-        <section class="arrangement-section">
-            <h1>Alle arrangementer</h1>
-            <div class="arrangementer-wrapper">
-                <div class="arrangement-wrapper">
-
-                    <?php
-                    while($arrangement = mysqli_fetch_assoc($arrangementQuery)){ ?>
-                        <div class="arrangement">
-                            <img src="<?php echo $arrangement["yklf_thumbnail"]?>">
-                            <h3><?php echo $arrangement["yklf_titel"]?></h3>
-                            <p><?php echo $arrangement["yklf_dagtekst"]." d. ".$arrangement["yklf_dag"]." ".$arrangement["yklf_dagtal"]."  ".$arrangement["yklf_maaned"]." ".$arrangement["yklf_aar"]." - kl. ".$arrangement["yklf_tidspunkt"]?></p>
-                            <p><?php echo $arrangement["yklf_kortbeskrivelse"]?></p>
-                            <div class="arrangement-buttons-wrapper">
-                                <a href="rediger-arrangement.php?id=<?php echo $arrangement["yklf_id"]?>"><button class="btnReg">SKAL RETTES</button></a>
-                            </div>
-                        </div>
-                    <?php } ?>
+        <section class="arrangement-tilmelding-wrapper">
+                <div class="arrangement-velkomst">
+                    <img src="images/sidebilleder/wellnessSponsor.jpg">
+                    <div class="arrangement-velkomst-dato">
+                        <h1>Arrangement titel</h1>
+                        <h2>Dato</h2>
+                        <h4>2. januar 2019 kl. 19.00</h4>
+                    </div>
                 </div>
-            </div>
+                <div class="arrangement-indhold">
+                    <h4>Dette er den korte beskrivelse</h4>
+                    <p>Dette er den lange beskrivelse, som er meget meget meget meget meget meget meget meget meget lang.
+                        Dette er den lange beskrivelse, som er meget meget meget meget meget meget meget meget meget lang.
+                        Dette er den lange beskrivelse, som er meget meget meget meget meget meget meget meget meget lang.
+                        Dette er den lange beskrivelse, som er meget meget meget meget meget meget meget meget meget lang.</p>
+                </div>
+                <div class="arrangement-tilmelding">
+                    <h1>Tilmeld dig</h1>
+                    <div class="kontaktFormularWrapper">
+                        <form>
+                            <input type="text" name="name" placeholder="Navn"><br>
+                            <input type="email" name="mail" placeholder="Mail"><br>
+                            <input type="text" name="event" placeholder="Hvilket arrangement deltager du i?"><br>
+                            <input type="text" name="besked" placeholder="Evt. besked"><br>
+                            <input type="submit" class="btnReg" value="JEG KOMMER">
+                        </form>
+                    </div>
+                </div>
         </section>
-    </div>
 
 </main>
 

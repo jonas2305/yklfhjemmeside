@@ -1,0 +1,81 @@
+.mainArrangmentTilmelding{
+  .arrangement-tilmelding-wrapper {
+    padding: 10px;
+    .arrangement-velkomst {
+      .arrangement-velkomst-dato {
+        h2 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+    .arrangement-indhold {
+      h4 {
+        margin: 40px 0 10px 0;
+      }
+      max-width: 1160px;
+    }
+    .arrangement-tilmelding {
+      h1 {
+        text-align: center;
+      }
+      .kontaktFormularWrapper {
+        background-color: $color-pri-darkblue;
+        padding: 25px;
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          input[type=text], input[type=email] {
+            height: 2em;
+            border-radius: 5px;
+            border: none;
+            padding: 5px;
+            margin-bottom: -10px;
+          }
+          input[type=submit] {
+            width: 50%;
+            margin-left: 50%;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 900px){
+  .mainArrangmentTilmelding{
+    .arrangement-tilmelding-wrapper {
+      padding: 35px;
+      .arrangement-velkomst {
+        display: flex;
+        img {
+          width: 40%;
+          height: 40%;
+          margin-right: 25px;
+        }
+        .arrangement-velkomst-dato {
+
+        }
+      }
+      .arrangement-indhold {
+
+      }
+      .arrangement-tilmelding {
+        max-width: 1160px;
+        .kontaktFormularWrapper {
+          width: 50%;
+          margin: auto;
+          form {
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+}

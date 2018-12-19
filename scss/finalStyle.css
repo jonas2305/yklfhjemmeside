@@ -870,5 +870,52 @@ footer {
     display: flex; }
     .opret-arrangement form .opret-arrangement-tidspunkt-wrapper input {
       margin-right: 5px; } }
+.mainArrangmentTilmelding .arrangement-tilmelding-wrapper {
+  padding: 10px; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst .arrangement-velkomst-dato h2 {
+    margin: 0;
+    font-size: 1.5em; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst .arrangement-velkomst-dato h4 {
+    margin: 0; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold {
+    max-width: 1160px; }
+    .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold h4 {
+      margin: 40px 0 10px 0; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding h1 {
+    text-align: center; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper {
+    background-color: #0F2F50;
+    padding: 25px; }
+    .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper form input[type=text], .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper form input[type=email] {
+        height: 2em;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        margin-bottom: -10px; }
+      .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper form input[type=submit] {
+        width: 50%;
+        margin-left: 50%;
+        margin-bottom: 0; }
+
+@media screen and (min-width: 900px) {
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper {
+    padding: 35px; }
+    .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst {
+      display: flex; }
+      .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst img {
+        width: 40%;
+        height: 40%;
+        margin-right: 25px; }
+    .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding {
+      max-width: 1160px; }
+      .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper {
+        width: 50%;
+        margin: auto; }
+        .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper form {
+          width: 100%; } }
 
 /*# sourceMappingURL=finalStyle.css.map */
