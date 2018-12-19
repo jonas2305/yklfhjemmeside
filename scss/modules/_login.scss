@@ -1,0 +1,36 @@
+
+.login-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+
+  height: 100%;
+
+  background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-boks{
+  background-color: $color-pri-darkblue;
+  padding: 20px;
+
+  h2{
+    color: $color-pri-orange;
+    margin: 0;
+    padding: 0;
+  }
+
+  form{
+    input{
+    width: 250px;
+    height: 30px;
+    }
+
+    label{
+      color: $color-pri-white;
+    }
+  }
+}

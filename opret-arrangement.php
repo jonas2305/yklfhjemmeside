@@ -6,50 +6,12 @@ $fileExistsFlag = 0;
 $fileName = $_FILES['Filename']['name'];
 $link = $db;
 $id = 2;
-/*
-*	Checking whether the file already exists in the destination folder
-*/
-//$query = "SELECT yklf_thumbnail FROM arrangementer WHERE yklf_id='$yklf_id'";
-//$result = $link->query($query) or die("Error : ".mysqli_error($link));
-//while($row = mysqli_fetch_array($result)) {
-//    if($row['yklf_thumbnail'] == $yklf_thumbnail) {
-//        $fileExistsFlag = 1;
-//    }
-//}
-/*
-* If file is not present in the destination folder
-*/
-//if($fileExistsFlag == 0) {
-    $target = "files/";
+
+    $target = "images/arrangementer/";
     $fileTarget = $target.$fileName;
     $tempFileName = $_FILES["Filename"]["tmp_name"];
     $fileDescription = $_POST['Description'];
     $result = move_uploaded_file($tempFileName,$fileTarget);
-    /*
-    *	If file was successfully uploaded in the destination folder
-    */
-//    if($result) {
-//        echo "Your file <html><b><i>".$fileName."</i></b></html> has been successfully uploaded";
-//        $query = "INSERT INTO arrangementer (yklf_thumbnail) VALUES ('$fileTarget')";
-//        $link->query($query) or die("Error : ".mysqli_error($link));
-//    }
-//    else {
-//        echo "Sorry !!! There was an error in uploading your file";
-//    }
-//    mysqli_close($link);
-//}
-/*
-* If file is already present in the destination folder
-*/
-//else {
-//    echo "File <html><b><i>".$fileName."</i></b></html> already exists in your folder. Please rename the file and try again.";
-//    mysqli_close($link);
-//}
-
-
-
-
-
 
 include'session.php';
 session_start();
@@ -92,57 +54,120 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
 <html>
 
 <head>
-    <title>Opret arrangement</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="description" content="Beskrivelse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/finalStyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="scss/finalStyle.css" rel="stylesheet" type="text/css">
+    <!--Meta data til sociale medier-->
+    <meta property="og:title" content="Rundvisning på vores campingplads - Ore Strand Camping" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.orestrandcamping.dk/rundvisning" />
+    <meta property="og:image" content="http://www.orestrandcamping.dk/images/stemningsbilleder/OreStrandCampingWEB-9242.jpg" />
+    <meta property="og:description" content="Rundvisning på vores campingplads, muligheder for overnatninger og aktiviteter til din campingferie" />
+    <meta property="og:locale" content="da_dk" />
 
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="http://bondejonas.dk/orestrandcamping/logoFavican32x32-02.png" />
+
+    <!--SØGEMASKINER MÅ IKKE INDEKSERE SIDEN-->
+    <meta name="robots" content="noindex,nofollow">
 </head>
 
 <body>
 
+<header>
+    <!--Logo til Mobil-->
+    <nav class="logo-mobil">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Logo til WEB-->
+    <nav class="logo-web">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Selve navigationen-->
+    <nav class="topnav" id="myTopnav">
+        <!--Menuknap til burgermenu-->
+        <div class="menuknap">
+            <i id="menuOpen" class="fas fa-bars"></i>
+        </div>
+        <!--Menu-->
+        <div class="topnavContentWrapper">
+            <!--Lukkeknap til burgermenu-->
+            <i class="fas fa-times burgermenuClose"></i>
+            <!--Menupunkter-->
+            <div class="topnavContent">
+                <a class="menuActive" href="index.php">Forside</a>
+                <a href="arrangementer.php">Arrangementer</a>
+                <a href="hvemervi.php">Hvem er vi?</a>
+                <a href="sponsorer.php">Sponsorer</a>
+                <a href="kontakt.php">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
 <main>
-    <h1>Opret arrangement</h1>
-    <h2><a href = "logud.php">Sign Out</a></h2>
-    <h2><a href = "admin-arrangementer.php">Annuller</a></h2>
+    <div class="log-ud">
+        <a href = "admin-arrangementer.php">
+            <button class="btnReg log-ud-btn">Annuller</button>
+        </a>
+        <a href = "logud.php">
+            <button class="btnReg log-ud-btn">Log ud</button>
+        </a>
+    </div>
 
-    <section class="opret-arrangement">
-        <form id="opret-arrangement" method ="post" action="opret-arrangement.php" enctype="multipart/form-data">
-            <label for="title">Titel</label>
-            <input class="" type="text" name="yklf_titel" id="titel" placeholder="" value="">
+    <div class="flex-wrapper-arrangement">
+        <section class="opret-arrangement">
+            <h1>Opret arrangement</h1>
+            <form id="opret-arrangement" method ="post" action="opret-arrangement.php" enctype="multipart/form-data">
 
-            <label for="dagtekst">Ugedag</label>
-            <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="" value="">
+                    <label for="titel">Hvad hedder arrangementet?</label>
+                    <input class="" type="text" name="yklf_titel" id="titel" placeholder="" value="">
 
-            <label for="dagtal">d.</label>
-            <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="" value="">
+                    <label>Hvornår afholdes arrangementet?</label>
+                    <label for="dagtekst">Ugedag</label>
+                    <input class="" type="text" name="yklf_dagtekst" id="dagtekst" placeholder="" value="">
+                    <label for="dagtal">d.</label>
+                    <input class="" type="text" name="yklf_dagtal" id="dagtal" placeholder="" value="">
+                    <label for="maaned">Måned</label>
+                    <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="" value="">
+                    <label for="aar">År</label>
+                    <input class="" type="text" name="yklf_aar" id="aar" placeholder="" value="">
+                    <label for="tidspunkt">Tidspunkt</label>
+                    <label>kl.</label>
+                    <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="" value="">
 
-            <label for="maaned">Måned</label>
-            <input class="" type="text" name="yklf_maaned" id="maaned" placeholder="" value="">
+                    <label for="kortbeskrivelse">Lav en kort beskrivelse af arrangementet.</label>
+                    <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="" value="">
 
-            <label for="aar">År</label>
-            <input class="" type="text" name="yklf_aar" id="aar" placeholder="" value="">
+                    <label for="langbeskrivelse">Lav en længere beskrivelse af arrangementet.</label>
+                    <input class="" type="text" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="" value="">
 
-            <label for="tidspunkt">Tidspunkt</label>
-            <input class="" type="text" name="yklf_tidspunkt" id="tidspunkt" placeholder="" value="">
+                    <label for="Filename">Upload et billede til arrangementet.</label>
+                    <input class="" type="file" name="Filename" id="thumbnail" placeholder="" value="">
 
-            <label for="kortbeskrivelse">Kort beskrivelse</label>
-            <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="" value="">
+                    <button type="submit" class="btnReg">Opret arrangement</button>
 
-            <label for="langbeskrivelse">Lang beskrivelse</label>
-            <input class="" type="text" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="" value="">
-
-            <label for="Filename">Billede</label>
-            <input class="" type="file" name="Filename" id="thumbnail" placeholder="" value="">
-
-            <button type="submit" class="">Opret arrangement</button>
-
-        </form>
-    </section>
+            </form>
+        </section>
+    </div>
 </main>
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -25,7 +25,6 @@
 </head>
 <body>
 
-<!--HEADER-->
 <header>
     <!--Logo til Mobil-->
     <nav class="logo-mobil">
@@ -64,7 +63,6 @@
         </div>
     </nav>
 </header>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

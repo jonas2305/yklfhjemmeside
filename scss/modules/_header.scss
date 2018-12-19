@@ -5,6 +5,8 @@ header {
   justify-content: space-between;
   align-content: center;
   padding: 10px 10px;
+  z-index: 5;
+  position: relative;
   //Mobil logo vises og styles
   figure {
     margin: 10px;
@@ -101,6 +103,7 @@ header {
         align-items: center;
         position: inherit;
         padding-right: 15px;
+        height: 80px !important;
         .burgermenuClose{
           display: none;
         }

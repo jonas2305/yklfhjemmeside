@@ -1,5 +1,5 @@
 <?php
-$db_host = "kjproductions.dk";
+$db_host = "kjproductions.dk.mysql";
 $db_user = "kjproductions_dk_yklf";
 $db_password = "kasperjonasthor";
 $db_database = "kjproductions_dk_yklf";

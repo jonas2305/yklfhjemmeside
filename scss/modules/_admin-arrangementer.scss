@@ -1,0 +1,75 @@
+//.admin-arrangementer{
+//  a{
+//    height: 0;
+//  }
+//}
+
+.log-ud{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 20px;
+
+  .log-ud-btn{
+    margin-right: 10px;
+
+    a{
+      text-decoration: none;
+      color: $color-pri-white;
+    }
+  }
+}
+
+.opret {
+  display: flex;
+  justify-content: center;
+
+}
+
+.arrangement{
+ background-color: $color-pri-darkblue;
+  margin: 5% 10px 5% 10px !important;
+
+}
+
+.arrangement-section{
+  background-color: $color-pri-lightgrey;
+  padding: 20px;
+}
+
+.arrangement-buttons-wrapper{
+  display: flex;
+  justify-content: space-around;
+
+  button{
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .arrangement{
+    width: 25.33%;
+    padding: 3% !important;
+    float: left;
+  }
+
+  .arrangementer-wrapper{
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrangement-wrapper{
+    width: 90vw;
+    .arrangement-padding-wrapper{
+      padding: 10px;
+    }
+  }
+
+  .arrangement-buttons-wrapper{
+    button{
+      width: 120px;
+    }
+  }
+}

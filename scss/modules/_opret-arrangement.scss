@@ -1,0 +1,21 @@
+.opret-arrangement{
+  background-color: $color-pri-darkblue;
+  padding: 25px;
+
+  h1{
+    margin: 0;
+    color: $color-pri-orange;
+  }
+}
+
+.arrangement-dato{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper-arrangement{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

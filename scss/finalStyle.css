@@ -88,6 +88,24 @@ p {
     top: 3px;
     right: 3px; }
 
+.btnBig {
+  background-color: #EFBA1A !important;
+  border: none;
+  padding: 10px 30px;
+  color: #0F2F50;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: -3px 3px #333333;
+  margin: 0 0 20px 3px;
+  position: relative;
+  font-size: 1.5em; }
+  .btnBig:active {
+    box-shadow: none;
+    top: 3px;
+    right: 3px; }
+
 @media screen and (min-width: 900px) {
   h1 {
     font-size: 3em; }
@@ -117,7 +135,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  z-index: 5;
+  position: relative; }
   header figure {
     margin: 10px; }
   header .logo-mobil {
@@ -189,7 +209,8 @@ header {
           display: flex;
           align-items: center;
           position: inherit;
-          padding-right: 15px; }
+          padding-right: 15px;
+          height: 80px !important; }
           header .topnav .topnavContentWrapper .burgermenuClose {
             display: none; }
           header .topnav .topnavContentWrapper .topnavContent {
@@ -505,5 +526,213 @@ footer {
     .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
       width: 25%;
       margin: 0 !important; } }
+.mainSponsorer {
+  padding: 0 10px; }
+  .mainSponsorer .sponsorerIntro {
+    display: flex;
+    flex-direction: column; }
+    .mainSponsorer .sponsorerIntro .sponsorerIntroTekst {
+      width: 100%; }
+    .mainSponsorer .sponsorerIntro .sponsorerIntroBillede img {
+      width: auto;
+      max-height: 250px;
+      margin: auto; }
+  .mainSponsorer .sponsorerEksempler {
+    background-color: #F2F2F2;
+    margin: 0 -10px;
+    padding: 10px 10px; }
+    .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit {
+      background-color: #0F2F50;
+      padding: 20px;
+      margin: 20px auto; }
+      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit h3 {
+        margin: 0; }
+      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit p {
+        margin: 0; }
+  .mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv {
+      border: 3px solid #707070;
+      width: 40%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 10px 0; }
+      .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv img {
+        width: auto;
+        height: auto;
+        max-width: 90% !important;
+        max-height: 90% !important; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
+    background-color: #0F2F50;
+    padding: 15px; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=text], .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=email] {
+        height: 2em;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        margin-bottom: -10px; }
+      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=submit] {
+        width: 50%;
+        margin-left: 50%;
+        margin-bottom: 0; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
+    background-color: #0F2F50;
+    padding: 15px;
+    margin: 15px auto; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten img {
+        width: 25%;
+        height: 25%;
+        margin-right: 5%; }
+      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten h3 {
+        font-size: 1.1em;
+        margin: 0;
+        font-weight: 600; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
+      width: 60%;
+      margin: 10px auto auto auto;
+      justify-content: space-between;
+      display: flex; }
+
+@media screen and (min-width: 900px) {
+  .sponsorerIntro {
+    flex-direction: row !important;
+    margin: 35px 25px;
+    align-items: center;
+    justify-content: space-between; }
+    .sponsorerIntro .sponsorerIntroTekst {
+      width: 40% !important; }
+      .sponsorerIntro .sponsorerIntroTekst h4 {
+        font-size: 1.6em; }
+    .sponsorerIntro .sponsorerIntroBillede {
+      width: 40% !important; }
+
+  .sponsorerEksempler {
+    padding: 35px !important; }
+    .sponsorerEksempler .sponsorerEksemplerFlex {
+      display: flex;
+      justify-content: space-between; }
+      .sponsorerEksempler .sponsorerEksemplerFlex .sponsorerEksemplerAfsnit {
+        width: 25%;
+        margin: 0 !important; }
+
+  .sponsorerLogo .sponsorerLogoFlex .logoDiv {
+    width: 30% !important;
+    height: 10em !important; }
+
+  .sponsorerStotOsKontakt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px; }
+    .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
+      padding: 20px !important;
+      width: 45%;
+      vertical-align: center; }
+    .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
+      padding: 20px !important;
+      width: 45%;
+      margin: 0 !important; }
+      .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
+        width: 40% !important; } }
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  height: 100%;
+  background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.login-boks {
+  background-color: #0F2F50;
+  padding: 20px; }
+  .login-boks h2 {
+    color: #E75037;
+    margin: 0;
+    padding: 0; }
+  .login-boks form input {
+    width: 250px;
+    height: 30px; }
+  .login-boks form label {
+    color: #FFFFFF; }
+
+.log-ud {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 20px; }
+  .log-ud .log-ud-btn {
+    margin-right: 10px; }
+    .log-ud .log-ud-btn a {
+      text-decoration: none;
+      color: #FFFFFF; }
+
+.opret {
+  display: flex;
+  justify-content: center; }
+
+.arrangement {
+  background-color: #0F2F50;
+  margin: 5% 10px 5% 10px !important; }
+
+.arrangement-section {
+  background-color: #F2F2F2;
+  padding: 20px; }
+
+.arrangement-buttons-wrapper {
+  display: flex;
+  justify-content: space-around; }
+  .arrangement-buttons-wrapper button {
+    width: 150px; }
+
+@media screen and (min-width: 900px) {
+  .arrangement {
+    width: 25.33%;
+    padding: 3% !important;
+    float: left; }
+
+  .arrangementer-wrapper {
+    display: flex;
+    justify-content: center; }
+
+  .arrangement-wrapper {
+    width: 90vw; }
+    .arrangement-wrapper .arrangement-padding-wrapper {
+      padding: 10px; }
+
+  .arrangement-buttons-wrapper button {
+    width: 120px; } }
+.opret-arrangement {
+  background-color: #0F2F50;
+  padding: 25px; }
+  .opret-arrangement h1 {
+    margin: 0;
+    color: #E75037; }
+
+.arrangement-dato {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.flex-wrapper-arrangement {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*# sourceMappingURL=finalStyle.css.map */

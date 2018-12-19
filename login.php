@@ -22,53 +22,97 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         header("location: admin-arrangementer.php");
     }else {
-        $error = "Your Login Name or Password is invalid";
+        $error = "Dit brugernavn eller kode er ugyldigt.";
     }
 }
 ?>
 <html>
 
 <head>
-    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Beskrivelse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/finalStyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <style type = "text/css">
-        body {
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:14px;
-        }
-        label {
-            font-weight:bold;
-            width:100px;
-            font-size:14px;
-        }
-        .box {
-            border:#666666 solid 1px;
-        }
-    </style>
+    <!--Meta data til sociale medier-->
+    <meta property="og:title" content="Rundvisning på vores campingplads - Ore Strand Camping" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.orestrandcamping.dk/rundvisning" />
+    <meta property="og:image" content="http://www.orestrandcamping.dk/images/stemningsbilleder/OreStrandCampingWEB-9242.jpg" />
+    <meta property="og:description" content="Rundvisning på vores campingplads, muligheder for overnatninger og aktiviteter til din campingferie" />
+    <meta property="og:locale" content="da_dk" />
 
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="http://bondejonas.dk/orestrandcamping/logoFavican32x32-02.png" />
+
+    <!--SØGEMASKINER MÅ IKKE INDEKSERE SIDEN-->
+    <meta name="robots" content="noindex,nofollow">
 </head>
 
-<body bgcolor = "#FFFFFF">
+<body>
 
-<div align = "center">
-    <div style = "width:300px; border: solid 1px #333333; " align = "left">
-        <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
+<header>
+    <!--Logo til Mobil-->
+    <nav class="logo-mobil">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Logo til WEB-->
+    <nav class="logo-web">
+        <figure>
+            <a href="index.php" class="logo">
+                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+            </a>
+        </figure>
+    </nav>
+    <!--Selve navigationen-->
+    <nav class="topnav" id="myTopnav">
+        <!--Menuknap til burgermenu-->
+        <div class="menuknap">
+            <i id="menuOpen" class="fas fa-bars"></i>
+        </div>
+        <!--Menu-->
+        <div class="topnavContentWrapper">
+            <!--Lukkeknap til burgermenu-->
+            <i class="fas fa-times burgermenuClose"></i>
+            <!--Menupunkter-->
+            <div class="topnavContent">
+                <a class="menuActive" href="index.php">Forside</a>
+                <a href="arrangementer.php">Arrangementer</a>
+                <a href="hvemervi.php">Hvem er vi?</a>
+                <a href="sponsorer.php">Sponsorer</a>
+                <a href="kontakt.php">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+</header>
 
-        <div style = "margin:30px">
-
+<main class="login-main">
+    <div class="login-boks">
+        <h2>Login</h2>
+        <div>
             <form action = "" method = "post">
-                <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
-                <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-                <input type = "submit" value = " Submit "/><br />
+                <label>Brugernavn</label>
+                <br>
+                <input type = "text" name = "username"/><br /><br />
+                <label>Adgangskode</label>
+                <br>
+                <input type = "password" name = "password"/><br/><br />
+                <input type = "submit" value = "Log ind" class="btnReg"/><br />
             </form>
 
-            <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-
+            <div><?php echo $error; ?></div>
         </div>
-
     </div>
+</main>
 
-</div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
