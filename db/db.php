@@ -1,6 +1,6 @@
 <?php
 $db_host = "kjproductions.dk";
-$db_user = "root";
+$db_user = "kjproductions_dk_yklf";
 $db_password = "kasperjonasthor";
 $db_database = "kjproductions_dk_yklf";
 

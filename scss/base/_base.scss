@@ -122,3 +122,27 @@ p{
   }
 
 }
+
+
+.arrangement-section {
+  background-color: $color-pri-lightgrey;
+
+  .arrangement {
+    padding: 5%;
+    margin: 10% 0 10% 0;
+    background-color: $color-pri-darkblue;
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    h3 {
+      color: $color-pri-orange;
+    }
+
+    p {
+      color: $color-pri-white;
+    }
+  }
+}
