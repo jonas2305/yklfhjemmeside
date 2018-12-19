@@ -1,35 +1,6 @@
 .mainSponsorer{
   padding: 0 10px;
-  .sponsorerIntro{
-    display: flex;
-    flex-direction: column;
-    .sponsorerIntroTekst{
-      width: 100%;
-    }
-    .sponsorerIntroBillede{
-      img {
-        width: 100%;
-        max-height: 250px;
-        margin: auto auto 15px auto;
-      }
-    }
-  }
-  .sponsorerEksempler{
-    background-color: $color-pri-lightgrey;
-    margin: 0 -10px;
-    padding: 10px 10px;
-    .sponsorerEksemplerAfsnit{
-      background-color: $color-pri-darkblue;
-      padding: 20px;
-      margin: 20px auto;
-      h3{
-        margin: 0;
-      }
-      p{
-        margin: 0;
-      }
-    }
-  }
+
   .sponsorerLogo{
     .sponsorerLogoFlex{
       display: flex;
@@ -103,6 +74,37 @@
           display: flex;
         }
       }
+    }
+  }
+}
+
+.sponsorerEksempler{
+  background-color: $color-pri-lightgrey;
+  margin: 0 -10px;
+  padding: 10px 10px;
+  .sponsorerEksemplerAfsnit{
+    background-color: $color-pri-darkblue;
+    padding: 20px;
+    margin: 20px auto;
+    h3{
+      margin: 0;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+.sponsorerIntro{
+  display: flex;
+  flex-direction: column;
+  .sponsorerIntroTekst{
+    width: 100%;
+  }
+  .sponsorerIntroBillede{
+    img {
+      width: 100%;
+      max-height: 250px;
+      margin: auto auto 15px auto;
     }
   }
 }

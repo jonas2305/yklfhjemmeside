@@ -126,6 +126,9 @@ p {
     .arrangement-section .arrangement p {
       color: #FFFFFF; }
 
+.bold {
+  font-weight: bold; }
+
 @media screen and (min-width: 1200px) {
   body {
     width: 1200px;
@@ -264,7 +267,8 @@ footer {
   padding: 20px 0 45px 0;
   background-color: #0F2F50; }
   .blaa-bar h1 {
-    color: #E75037 !important; }
+    color: #E75037 !important;
+    margin: 0; }
   .blaa-bar .blaa-bar-indhold p {
     color: #FFFFFF;
     font-size: 1.5em; }
@@ -272,6 +276,29 @@ footer {
 .naeste-arrangementer {
   background-color: #F2F2F2; }
 
+.se-alle-sponsorer-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; }
+
+@media screen and (min-width: 900px) {
+  .forside-slider-tekst {
+    width: 30vw; }
+
+  .blaa-bar-indhold {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .blaa-bar-indhold p {
+      width: 60vw; }
+
+  .forside-arrangementer {
+    display: flex;
+    flex-direction: row-reverse; }
+    .forside-arrangementer .billede {
+      width: 50%; }
+    .forside-arrangementer .forside-arrangementer-tekst {
+      width: 50%; } }
 .mainHvemErVi {
   padding: 0 10px; }
   .mainHvemErVi .hvemErViIntro {
@@ -377,27 +404,6 @@ footer {
       margin-left: 5%; } }
 .mainSponsorer {
   padding: 0 10px; }
-  .mainSponsorer .sponsorerIntro {
-    display: flex;
-    flex-direction: column; }
-    .mainSponsorer .sponsorerIntro .sponsorerIntroTekst {
-      width: 100%; }
-    .mainSponsorer .sponsorerIntro .sponsorerIntroBillede img {
-      width: 100%;
-      max-height: 250px;
-      margin: auto auto 15px auto; }
-  .mainSponsorer .sponsorerEksempler {
-    background-color: #F2F2F2;
-    margin: 0 -10px;
-    padding: 10px 10px; }
-    .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit {
-      background-color: #0F2F50;
-      padding: 20px;
-      margin: 20px auto; }
-      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit h3 {
-        margin: 0; }
-      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit p {
-        margin: 0; }
   .mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
     display: flex;
     flex-wrap: wrap;
@@ -455,6 +461,29 @@ footer {
       margin: 10px auto auto auto;
       justify-content: space-between;
       display: flex; }
+
+.sponsorerEksempler {
+  background-color: #F2F2F2;
+  margin: 0 -10px;
+  padding: 10px 10px; }
+  .sponsorerEksempler .sponsorerEksemplerAfsnit {
+    background-color: #0F2F50;
+    padding: 20px;
+    margin: 20px auto; }
+    .sponsorerEksempler .sponsorerEksemplerAfsnit h3 {
+      margin: 0; }
+    .sponsorerEksempler .sponsorerEksemplerAfsnit p {
+      margin: 0; }
+
+.sponsorerIntro {
+  display: flex;
+  flex-direction: column; }
+  .sponsorerIntro .sponsorerIntroTekst {
+    width: 100%; }
+  .sponsorerIntro .sponsorerIntroBillede img {
+    width: 100%;
+    max-height: 250px;
+    margin: auto auto 15px auto; }
 
 @media screen and (min-width: 900px) {
   .sponsorerIntro {
@@ -500,27 +529,6 @@ footer {
         width: 40% !important; } }
 .mainKontakt {
   padding: 0 10px; }
-  .mainKontakt .kontaktFormularWrapper .kontaktFormularForm {
-    background-color: #0F2F50;
-    padding: 15px; }
-    .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end; }
-      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=text], .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=email] {
-        height: 2em;
-        border-radius: 5px;
-        border: none;
-        padding: 5px;
-        margin-bottom: -10px; }
-      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form input[type=submit] {
-        width: 50%;
-        margin-left: 50%;
-        margin-bottom: 0; }
-  .mainKontakt .kontaktFormularWrapper .kontaktFormularImg {
-    margin: 15px auto; }
-    .mainKontakt .kontaktFormularWrapper .kontaktFormularImg img {
-      width: 100%; }
   .mainKontakt .kontaktModBestyrelsen {
     background-color: #F2F2F2;
     margin: 0 -10px;
@@ -536,49 +544,51 @@ footer {
         .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p a {
           color: #FFFFFF; }
 
-@media screen and (min-width: 900px) {
-  .mainKontakt .kontaktFormularWrapper {
+.kontaktFormularWrapper .kontaktFormularForm {
+  background-color: #0F2F50;
+  padding: 15px; }
+  .kontaktFormularWrapper .kontaktFormularForm form {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 35px; }
-    .mainKontakt .kontaktFormularWrapper .kontaktFormularForm {
-      padding: 20px !important;
-      width: 45%; }
-      .mainKontakt .kontaktFormularWrapper .kontaktFormularForm form {
-        margin: auto; }
-    .mainKontakt .kontaktFormularWrapper .kontaktFormularImg {
-      width: 45%;
-      margin: 0 !important; }
+    flex-direction: column;
+    justify-content: flex-end; }
+    .kontaktFormularWrapper .kontaktFormularForm form input[type=text], .kontaktFormularWrapper .kontaktFormularForm form input[type=email] {
+      height: 2em;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      margin-bottom: -10px; }
+    .kontaktFormularWrapper .kontaktFormularForm form input[type=submit] {
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: 0; }
+.kontaktFormularWrapper .kontaktFormularImg {
+  margin: 15px auto; }
+  .kontaktFormularWrapper .kontaktFormularImg img {
+    width: 100%; }
+
+@media screen and (min-width: 900px) {
   .mainKontakt .kontaktModBestyrelsen {
     display: flex;
     padding: 35px !important;
     justify-content: space-between; }
     .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
       width: 25%;
+      margin: 0 !important; }
+
+  .kontaktFormularWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px; }
+    .kontaktFormularWrapper .kontaktFormularForm {
+      padding: 20px !important;
+      width: 45%; }
+      .kontaktFormularWrapper .kontaktFormularForm form {
+        margin: auto; }
+    .kontaktFormularWrapper .kontaktFormularImg {
+      width: 45%;
       margin: 0 !important; } }
 .mainSponsorer {
   padding: 0 10px; }
-  .mainSponsorer .sponsorerIntro {
-    display: flex;
-    flex-direction: column; }
-    .mainSponsorer .sponsorerIntro .sponsorerIntroTekst {
-      width: 100%; }
-    .mainSponsorer .sponsorerIntro .sponsorerIntroBillede img {
-      width: 100%;
-      max-height: 250px;
-      margin: auto auto 15px auto; }
-  .mainSponsorer .sponsorerEksempler {
-    background-color: #F2F2F2;
-    margin: 0 -10px;
-    padding: 10px 10px; }
-    .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit {
-      background-color: #0F2F50;
-      padding: 20px;
-      margin: 20px auto; }
-      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit h3 {
-        margin: 0; }
-      .mainSponsorer .sponsorerEksempler .sponsorerEksemplerAfsnit p {
-        margin: 0; }
   .mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
     display: flex;
     flex-wrap: wrap;
@@ -636,6 +646,29 @@ footer {
       margin: 10px auto auto auto;
       justify-content: space-between;
       display: flex; }
+
+.sponsorerEksempler {
+  background-color: #F2F2F2;
+  margin: 0 -10px;
+  padding: 10px 10px; }
+  .sponsorerEksempler .sponsorerEksemplerAfsnit {
+    background-color: #0F2F50;
+    padding: 20px;
+    margin: 20px auto; }
+    .sponsorerEksempler .sponsorerEksemplerAfsnit h3 {
+      margin: 0; }
+    .sponsorerEksempler .sponsorerEksemplerAfsnit p {
+      margin: 0; }
+
+.sponsorerIntro {
+  display: flex;
+  flex-direction: column; }
+  .sponsorerIntro .sponsorerIntroTekst {
+    width: 100%; }
+  .sponsorerIntro .sponsorerIntroBillede img {
+    width: 100%;
+    max-height: 250px;
+    margin: auto auto 15px auto; }
 
 @media screen and (min-width: 900px) {
   .sponsorerIntro {
@@ -699,7 +732,8 @@ footer {
   padding: 20px 0 45px 0;
   background-color: #0F2F50; }
   .blaa-bar h1 {
-    color: #E75037 !important; }
+    color: #E75037 !important;
+    margin: 0; }
   .blaa-bar .blaa-bar-indhold p {
     color: #FFFFFF;
     font-size: 1.5em; }
@@ -707,6 +741,29 @@ footer {
 .naeste-arrangementer {
   background-color: #F2F2F2; }
 
+.se-alle-sponsorer-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; }
+
+@media screen and (min-width: 900px) {
+  .forside-slider-tekst {
+    width: 30vw; }
+
+  .blaa-bar-indhold {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .blaa-bar-indhold p {
+      width: 60vw; }
+
+  .forside-arrangementer {
+    display: flex;
+    flex-direction: row-reverse; }
+    .forside-arrangementer .billede {
+      width: 50%; }
+    .forside-arrangementer .forside-arrangementer-tekst {
+      width: 50%; } }
 .login-main {
   display: flex;
   justify-content: center;
@@ -763,7 +820,7 @@ footer {
 
 @media screen and (min-width: 900px) {
   .arrangement {
-    width: 25.33%;
+    width: 24.33%;
     padding: 3% !important;
     float: left; }
 

@@ -23,20 +23,15 @@
 
 .blaa-bar{
   padding: 20px 0 45px 0;
-//  margin-top: -40px;
-//  height: 20vh;
   background-color: $color-pri-darkblue;
 
   h1{
     color: $color-pri-orange !important;
+    margin: 0;
   }
 
   .blaa-bar-indhold{
-//    display: flex;
-//    justify-content: flex-start;
-//    align-items: flex-end;
     p{
-//      width: 60vw;
       color: $color-pri-white;
       font-size: 1.5em;
     }
@@ -45,4 +40,40 @@
 
 .naeste-arrangementer{
   background-color: $color-pri-lightgrey;
+}
+
+.se-alle-sponsorer-button{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px){
+  .forside-slider-tekst{
+    width: 30vw;
+  }
+
+  .blaa-bar-indhold{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    p{
+      width: 60vw;
+    }
+  }
+
+  .forside-arrangementer{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .billede{
+      width: 50%;
+    }
+
+    .forside-arrangementer-tekst{
+      width: 50%;
+    }
+  }
+
 }

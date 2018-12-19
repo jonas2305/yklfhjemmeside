@@ -93,12 +93,9 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
     </section>
     <section class="forside-arrangementer">
         <div class="billede">
-            <img src="">
+            <img src="images/sidebilleder/taskeSponsor.jpg">
         </div>
-        <div>
-            <div class="billede">
-                <img src="images/sidebilleder/taskeSponsor.jpg">
-            </div>
+        <div class="forside-arrangementer-tekst">
             <h1>Arrangementer for dig</h1>
             <p>Hos os kan du møde ligestillede mennesker, der står med de samme bekymringer. Kom og snak, lyt og få oplevelser, der kan hjælpe dig i hverdagen, eller give et afbræk fra vanerne. </p>
             <a href="arrangementer.php">
@@ -106,41 +103,59 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
             </a>
         </div>
     </section>
-    <section class="naeste-arrangementer">
-        <h1>Næste arrangementer</h1>
-       //PHP
-    </section>
-    <section class="tilmeld">
-        <h1>Jeg vil være med</h1>
-        <h2></h2>
-        <div class="form"></div>
-        <div class="billede">
-            <img src="">
-        </div>
-    </section>
-
-
     <section class="arrangement-section">
-        <h1>Alle arrangementer</h1>
+        <h1>Næste arrangementer</h1>
         <div class="arrangementer-wrapper">
             <div class="arrangement-wrapper">
 
                 <?php
                 $n = 0;
 
-                while($arrangement = mysqli_fetch_assoc($arrangementQuery)){ ?>
+                while($arrangement = mysqli_fetch_assoc($arrangementQuery)){
+                    if($n < 3){
+
+                    ?>
+
                     <div class="arrangement">
                         <img src="<?php echo $arrangement["yklf_thumbnail"]?>">
                         <h3><?php echo $arrangement["yklf_titel"]?></h3>
                         <p><?php echo $arrangement["yklf_dagtekst"]." d. ".$arrangement["yklf_dag"]." ".$arrangement["yklf_dagtal"]."  ".$arrangement["yklf_maaned"]." ".$arrangement["yklf_aar"]." - kl. ".$arrangement["yklf_tidspunkt"]?></p>
                         <p><?php echo $arrangement["yklf_kortbeskrivelse"]?></p>
                         <div class="arrangement-buttons-wrapper">
-                            <a href="rediger-arrangement.php?id=<?php echo $arrangement["yklf_id"]?>"><button class="btnReg">Rediger</button></a>
-                            <a href="slet-arrangement.php?id=<?php echo $arrangement["yklf_id"]?>"><button class="btnReg">Slet</button></a>
+                            <a href="rediger-arrangement.php?id=<?php echo $arrangement["yklf_id"]?>"><button class="btnReg">SKAL RETTES</button></a>
                         </div>
                     </div>
-                <?php } ?>
+                <?php } $n++;} ?>
             </div>
+        </div>
+    </section>
+
+    <!--EKSEMPLER PÅ SPONSORATER-->
+    <section class="sponsorerEksempler">
+        <h1>Vores sponsorer</h1>
+        <p>Foreningen er drevet på sponsorer og offentlige midler, og vi er derfor meget glad for dem der vil støtte. Se her,  hvem der har støttet os.</p>
+        <div class="sponsorerEksemplerFlex">
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/pengeSponsor.jpg" alt="sponsorat Netværk for yngre kræftramte">
+                <h3>Stafet for livet</h3>
+                <p class="pWhite">Støttet af: Lions Sydlolland<br><br>
+                    Donation til afvikling af Stafet for livet.</p>
+            </div>
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/wellnessSponsor.jpg" alt="wellnesstur Netværk for yngre kræftramte">
+                <h3>Wellnesstur</h3>
+                <p class="pWhite">Støttet af: Tryg Fonden<br><br>
+                    Wellnesstur til Nordtyskland for alle foreningens medlemmer.</p>
+            </div>
+            <div class="sponsorerEksemplerAfsnit">
+                <img src="images/sidebilleder/taskeSponsor.jpg" alt="taske Netværk for yngre kræftramte">
+                <h3>Tasker til medlemmer</h3>
+                <p class="pWhite">Støttet af: Halstedhus Efterskole<br><br>
+                    Donation af tasker til alle medlemmer.</p>
+            </div>
+        </div>
+        <div class="se-alle-sponsorer-button">
+            <a href="sponsorer.php"><button class="btnBig">Se alle sponsorer</button></a>
         </div>
     </section>
 
