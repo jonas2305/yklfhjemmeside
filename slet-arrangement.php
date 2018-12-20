@@ -10,5 +10,5 @@ $arrangement = mysqli_query($db, "DELETE FROM arrangementer WHERE yklf_id = '$de
 
 <script>
     alert("Arrangementet er nu slettet.");
-    document.location = "admin-arrangementer.php";
+    document.location = "admin-arrangementer-for-folk-med-cancer.php";
 </script>

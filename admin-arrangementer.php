@@ -40,7 +40,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         <nav class="logo-mobil">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -48,7 +48,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         <nav class="logo-web">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -65,10 +65,10 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
                 <!--Menupunkter-->
                 <div class="topnavContent">
                     <a href="index.php">Forside</a>
-                    <a href="arrangementer.php">Arrangementer</a>
-                    <a href="hvemervi.php">Hvem er vi?</a>
-                    <a href="sponsorer.php">Sponsorer</a>
-                    <a href="kontakt.php">Kontakt</a>
+                    <a href="arrangementer-for-folk-med-cancer.php">Arrangementer</a>
+                    <a href="hvem-er-forening-for-yngre-kraeft-ramte.php">Hvem er vi?</a>
+                    <a href="sponsorer-i-kamp-mod-cancer.php">Sponsorer</a>
+                    <a href="kontakt-forening-for-yngre-kraeft-ramte.php">Kontakt</a>
                 </div>
             </div>
         </nav>

@@ -2,15 +2,15 @@
 require 'db/db.php';
 session_start();
 
-$user_check = $_SESSION['login_user'];
+$bruger_check = $_SESSION['bruger_login'];
 
-$ses_sql = mysqli_query($db,"select login_brugernavn from login where login_brugernavn = '$user_check' ");
+$ses_sql = mysqli_query($db,"select login_brugernavn from login where login_brugernavn = '$bruger_check' ");
 
 $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
 
-$login_session = $row['username'];
+$login_session = $row['brugernavn'];
 
-if(!isset($_SESSION['login_user'])){
+if(!isset($_SESSION['bruger_login'])){
     header("location:login.php");
 }
 ?>

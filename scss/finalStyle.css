@@ -41,7 +41,7 @@ p {
   color: #FFFFFF; }
 
 .sideTitel {
-  background-image: url("http://bondejonas.dk/billederTilDiverseProjekter/OreStrandCampingCoverWEB-7841.jpg");
+  background-image: url("http://kjproductions.dk/yklf/images/forening-for-yngre-kraeft-ramte.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,10 +346,12 @@ footer {
     width: 100%; }
   .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo {
     background-color: #0F2F50;
-    padding: 25px 10px; }
-    .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo img {
-      max-height: 250px;
-      margin: auto; }
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo video {
+      max-height: 250px; }
 .mainHvemErVi .hvemErViOmForeningen img {
   width: auto;
   max-height: 250px;
@@ -894,7 +896,8 @@ footer {
   margin: 5% 10px 5% 10px !important; }
 
 .arrangement-section {
-  background-color: #F2F2F2; }
+  background-color: #F2F2F2;
+  padding-top: 10px; }
 
 .arrangement-buttons-wrapper {
   display: flex;

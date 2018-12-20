@@ -3,26 +3,24 @@ require "db/db.php";
 session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    // username and password sent from form
 
-    $myusername = mysqli_real_escape_string($db,$_POST['username']);
-    $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+    $brugernavn = mysqli_real_escape_string($db,$_POST['brugernavn']);
+    $kode = mysqli_real_escape_string($db,$_POST['kode']);
 
-    $sql = "SELECT login_id FROM login WHERE login_brugernavn = '$myusername' and login_kode = '$mypassword'";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $active = $row['active'];
+    $sql = "SELECT login_id FROM login WHERE login_brugernavn = '$brugernavn' and login_kode = '$kode'";
+    $bruger = mysqli_query($db,$sql);
+    $row = mysqli_fetch_array($bruger,MYSQLI_ASSOC);
+    $aktiv = $row['active'];
 
-    $count = mysqli_num_rows($result);
+    $check = mysqli_num_rows($bruger);
 
-    // If result matched $myusername and $mypassword, table row must be 1 row
 
-    if($count == 1) {
-        $_SESSION['login_user'] = $myusername;
+    if($check == 1) {
+        $_SESSION['bruger_login'] = $brugernavn;
 
-        header("location: admin-arrangementer.php");
+        header("location: admin-arrangementer-for-folk-med-cancer.php");
     }else {
-        $error = "Dit brugernavn eller kode er ugyldigt.";
+        $fejl = "Dit brugernavn eller kode er ugyldigt.";
     }
 }
 ?>
@@ -61,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav class="logo-mobil">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -69,7 +67,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav class="logo-web">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -86,10 +84,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <!--Menupunkter-->
                 <div class="topnavContent">
                     <a href="index.php">Forside</a>
-                    <a href="arrangementer.php">Arrangementer</a>
-                    <a href="hvemervi.php">Hvem er vi?</a>
-                    <a href="sponsorer.php">Sponsorer</a>
-                    <a href="kontakt.php">Kontakt</a>
+                    <a href="arrangementer-for-folk-med-cancer.php">Arrangementer</a>
+                    <a href="hvem-er-forening-for-yngre-kraeft-ramte.php">Hvem er vi?</a>
+                    <a href="sponsorer-i-kamp-mod-cancer.php">Sponsorer</a>
+                    <a href="kontakt-forening-for-yngre-kraeft-ramte.php">Kontakt</a>
                 </div>
             </div>
         </nav>
@@ -104,14 +102,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action = "" method = "post">
                 <label>Brugernavn</label>
                 <br>
-                <input type = "text" name = "username"/><br /><br />
+                <input type = "text" name = "brugernavn"/><br /><br />
                 <label>Adgangskode</label>
                 <br>
-                <input type = "password" name = "password"/><br/><br />
+                <input type = "password" name = "kode"/><br/><br />
                 <input type = "submit" value = "Log ind" class="btnReg"/><br />
             </form>
 
-            <div><?php echo $error; ?></div>
+            <div><?php echo $fejl; ?></div>
         </div>
     </div>
 </main>

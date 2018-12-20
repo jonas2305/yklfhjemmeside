@@ -8,9 +8,11 @@
     .hvemErViIntroVideo{
       background-color: $color-pri-darkblue;
       padding: 25px 10px;
-      img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      video {
         max-height: 250px;
-        margin: auto;
       }
     }
   }

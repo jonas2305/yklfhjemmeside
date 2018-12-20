@@ -1,20 +1,18 @@
 <?php
 
 require "db/db.php";
-
-$fileExistsFlag = 0;
-$fileName = $_FILES['Filename']['name'];
-$link = $db;
-$id = 2;
-
-    $target = "images/arrangementer/";
-    $fileTarget = $target.$fileName;
-    $tempFileName = $_FILES["Filename"]["tmp_name"];
-    $fileDescription = $_POST['Description'];
-    $result = move_uploaded_file($tempFileName,$fileTarget);
-
 include'session.php';
 session_start();
+
+$filNavn = $_FILES['Filename']['name'];
+$link = $db;
+
+$mappe = "images/arrangementer/";
+$filSti = $mappe.$filNavn;
+$midlertidigtFilNavn = $_FILES["Filename"]["tmp_name"];
+$fileDescription = $_POST['Description'];
+$resultat = move_uploaded_file($midlertidigtFilNavn,$filSti);
+
 
 if(isset($_POST["yklf_titel"]) && !empty($_POST["yklf_titel"])) {
 $yklf_id = $_POST["yklf_id"];
@@ -28,16 +26,16 @@ $yklf_kortbeskrivelse = $_POST["yklf_kortbeskrivelse"];
 $yklf_langbeskrivelse = $_POST["yklf_langbeskrivelse"];
 $yklf_thumbnail = $_POST["Filename"];
 
-$insert = mysqli_query($db, "INSERT INTO arrangementer (yklf_titel, yklf_dagtekst, yklf_dagtal, yklf_maaned, yklf_aar, yklf_tidspunkt, yklf_kortbeskrivelse, yklf_langbeskrivelse, yklf_thumbnail)
-VALUES('$yklf_titel', '$yklf_dagtekst', '$yklf_dagtal', '$yklf_maaned', '$yklf_aar', '$yklf_tidspunkt', '$yklf_kortbeskrivelse', '$yklf_langbeskrivelse', '$fileTarget')");
+$sendTilDatabase = mysqli_query($db, "INSERT INTO arrangementer (yklf_titel, yklf_dagtekst, yklf_dagtal, yklf_maaned, yklf_aar, yklf_tidspunkt, yklf_kortbeskrivelse, yklf_langbeskrivelse, yklf_thumbnail)
+VALUES('$yklf_titel', '$yklf_dagtekst', '$yklf_dagtal', '$yklf_maaned', '$yklf_aar', '$yklf_tidspunkt', '$yklf_kortbeskrivelse', '$yklf_langbeskrivelse', '$filSti')");
 
 
-if ($insert) {
+if ($sendTilDatabase) {
 ?>
 
 <script>
     alert("Arrangementet er oprettet");
-    document.location = 'admin-arrangementer.php';
+    document.location = 'admin-arrangementer-for-folk-med-cancer.php';
 </script>
 
 <?php
@@ -86,7 +84,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         <nav class="logo-mobil">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -94,7 +92,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         <nav class="logo-web">
             <figure>
                 <a href="index.php" class="logo">
-                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                    <img src="images/logo/forening-for-yngre-kraeft-ramte-logo.png" alt="Netværk for yngre kræftramte logo">
                 </a>
             </figure>
         </nav>
@@ -111,10 +109,10 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
                 <!--Menupunkter-->
                 <div class="topnavContent">
                     <a href="index.php">Forside</a>
-                    <a href="arrangementer.php">Arrangementer</a>
-                    <a href="hvemervi.php">Hvem er vi?</a>
-                    <a href="sponsorer.php">Sponsorer</a>
-                    <a href="kontakt.php">Kontakt</a>
+                    <a href="arrangementer-for-folk-med-cancer.php">Arrangementer</a>
+                    <a href="hvem-er-forening-for-yngre-kraeft-ramte.php">Hvem er vi?</a>
+                    <a href="sponsorer-i-kamp-mod-cancer.php">Sponsorer</a>
+                    <a href="kontakt-forening-for-yngre-kraeft-ramte.php">Kontakt</a>
                 </div>
             </div>
         </nav>
@@ -153,7 +151,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
                     <input class="" type="text" name="yklf_kortbeskrivelse" id="kortbeskrivelse" placeholder="Kort beskrivelse" value=""><br><br>
 
                     <label for="langbeskrivelse">Lav en længere beskrivelse af arrangementet.</label><br>
-                    <textarea class="" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="Lang beskrivelse" value=""></textarea><br><br>
+                    <textarea class="" name="yklf_langbeskrivelse" id="langbeskrivelse" placeholder="Lang beskrivelse"></textarea><br><br>
 
                     <label for="Filename">Upload et billede til arrangementet.</label><br>
                     <input class="" type="file" name="Filename" id="thumbnail" placeholder="" value=""><br><br>
