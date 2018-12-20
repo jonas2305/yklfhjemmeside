@@ -103,7 +103,7 @@
                     <p class="pWhite">FORMAND<br><br>
                         <a href="tel:+4512345678">12345678</a><br>
                         <a href="mailto:jeanne@yklf.dk">jeanne@yklf.dk</a><br><br>
-                        Jeg blev ramt af kraft i brystet for 10 år siden, og var med til at starte foreningen, da det manglede. Nu er jeg stolt formand, og prøver at
+                        Jeg blev ramt af kræft i brystet for 10 år siden, og var med til at starte foreningen, da det manglede. Nu er jeg stolt formand, og prøver at
                         give så meget som muligt videre.</p>
                 </div>
                 <div class="kontaktModBestyrelsenPerson">

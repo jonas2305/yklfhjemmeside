@@ -83,13 +83,13 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
 
     <section class="sponsorerIntro maksBredde">
         <div class="sponsorerIntroTekst">
-            <h4>Igennem forskellige arrangementer møder du ligestillede mennesker i øjenhøjde, som både kan hjælpe dig, og har brug for din hjælp.
+            <h4>Igennem forskellige arrangementer møder du ligestillede mennesker i øjenhøjde, som både kan hjælpe dig, og har brug for din hjælp, både omkring kræft og alt andet.
                 <br><br>
                 Kom og snak, lyt og få oplevelser, der hjælper og giver afbræk fra det du kender.
                 <br>
                 <span class="bold">Du er ikke alene.</span>
                 <br><br>
-                Herunder kan du se vores kommens arrangementer. Klik på dem, og tilmeld dig.
+                Herunder kan du se kommende arrangementer i vores forening. Klik på dem, og tilmeld dig.
             </h4>
         </div>
         <div class="sponsorerIntroBillede">

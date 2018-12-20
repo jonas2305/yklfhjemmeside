@@ -42,13 +42,27 @@ $arrangement = mysqli_fetch_assoc($arrangementQuery);
 <html>
 
 <head>
-    <title>Opret arrangement</title>
+    <meta charset="UTF-8">
+    <title>Rediger arrangement</title>
+    <meta name="description" content="Beskrivelse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/finalStyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="scss/finalStyle.css" rel="stylesheet" type="text/css">
+    <!--Meta data til sociale medier-->
+    <meta property="og:title" content="Forening for Yngre Kræft ramte" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.kjproductions.dk/yklf/index.php" />
+    <meta property="og:image" content="http://www.kjproductions.dk/yklf/images/logo/logo-02.png" />
+    <meta property="og:description" content="Har du, eller kender du nogen med kræft / cancer? Vi er Forening for Yngre Kræft Ramte. Vi hjælper dig med at håndtere dit kræft forløb." />
+    <meta property="og:locale" content="da_dk" />
 
-    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="http://www.kjproductions.dk/yklf/images/logo/yklf-favicon.png" />
+
+    <!--SØGEMASKINER MÅ IKKE INDEKSERE SIDEN-->
+    <meta name="robots" content="noindex,nofollow">
 </head>
 
 <body>

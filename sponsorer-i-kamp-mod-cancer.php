@@ -77,8 +77,8 @@
     <!--INTRO-->
     <section class="sponsorerIntro maksBredde">
         <div class="sponsorerIntroTekst">
-            <h4>I netværket kan du møde ligestillede, der har samme tanker og bekymringer i forhold til børn, familieliv, arbejdsliv, angst for
-                tilbagefald og i forhold til det at komme videre i livet.
+            <h4>Vores forening er udelukkende drevet på frivilligt arbejde, sponsorer og offentlige midler.
+                Der er ingen medlemsbetaling, hvorfor at vores sponsorindtægter og offentlige midler gør en stor forskel. Uden dem, ingen forening.
             </h4>
         </div>
         <div class="sponsorerIntroBillede">

@@ -53,7 +53,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Opret nyt arrangement</title>
     <meta name="description" content="Beskrivelse">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/finalStyle.css">
@@ -61,15 +61,15 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
     <!--Meta data til sociale medier-->
-    <meta property="og:title" content="Rundvisning på vores campingplads - Ore Strand Camping" />
+    <meta property="og:title" content="Forening for Yngre Kræft ramte" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.orestrandcamping.dk/rundvisning" />
-    <meta property="og:image" content="http://www.orestrandcamping.dk/images/stemningsbilleder/OreStrandCampingWEB-9242.jpg" />
-    <meta property="og:description" content="Rundvisning på vores campingplads, muligheder for overnatninger og aktiviteter til din campingferie" />
+    <meta property="og:url" content="http://www.kjproductions.dk/yklf/index.php" />
+    <meta property="og:image" content="http://www.kjproductions.dk/yklf/images/logo/logo-02.png" />
+    <meta property="og:description" content="Har du, eller kender du nogen med kræft / cancer? Vi er Forening for Yngre Kræft Ramte. Vi hjælper dig med at håndtere dit kræft forløb." />
     <meta property="og:locale" content="da_dk" />
 
     <!--FAVICON-->
-    <link rel="icon" type="image/x-icon" href="http://bondejonas.dk/orestrandcamping/logoFavican32x32-02.png" />
+    <link rel="icon" type="image/x-icon" href="http://www.kjproductions.dk/yklf/images/logo/yklf-favicon.png" />
 
     <!--SØGEMASKINER MÅ IKKE INDEKSERE SIDEN-->
     <meta name="robots" content="noindex,nofollow">

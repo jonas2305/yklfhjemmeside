@@ -79,7 +79,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
     <section class="forside-slider">
         <div class="maksBredde">
             <div class="forside-slider-tekst">
-                <h1 >Mød ligestillede med samme bekymringer og spørgsmål. <br>
+                <h1 >Mød ligestillede med kræft, der har samme bekymringer og spørgsmål. <br>
                     Du er ikke alene.</h1>
                 <a href="hvem-er-forening-for-yngre-kraeft-ramte.php">
                     <button class="btnReg">Hvem er vi?</button>
@@ -93,7 +93,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         <div class="maksBredde">
             <h1>Venner i øjenhøjde</h1>
             <div class="blaa-bar-indhold">
-                <p>Et netværk for yngre kræftramte i alderen 18-45 år, hvor vi  møder hinanden i øjenhøjde. Alle har oplevet sygdommen på egen krop, og ved derfor hvad det handler om.</p>
+                <p>En forening for yngre med kræft i alderen 18-45 år, hvor vi  møder hinanden i øjenhøjde. Alle har oplevet kræft sygdommen på egen krop, og ved derfor hvad det handler om.</p>
                 <a href="hvem-er-forening-for-yngre-kraeft-ramte.php">
                     <button class="btnReg">Læs mere her</button>
                 </a>
@@ -106,7 +106,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
         </div>
         <div class="forside-arrangementer-tekst">
             <h1>Arrangementer for dig</h1>
-            <p>Hos os kan du møde ligestillede mennesker, der står med de samme bekymringer. Kom og snak, lyt og få oplevelser, der kan hjælpe dig i hverdagen, eller give et afbræk fra vanerne. </p>
+            <p>Hos os kommer du til en forening, hvor du kan møde ligestillede mennesker med kræft, der står med de samme bekymringer. Kom og snak, lyt og få oplevelser, der kan hjælpe dig i hverdagen, eller give et afbræk fra vanerne. </p>
             <a href="arrangementer-for-folk-med-cancer.php">
                 <button class="btnReg">Se vores arrangementer</button>
             </a>
@@ -147,7 +147,7 @@ $arrangementQuery = mysqli_query($db, "SELECT * FROM arrangementer ORDER BY yklf
     <!--EKSEMPLER PÅ SPONSORATER-->
     <section class="sponsorerEksempler">
         <h1 class="maksBredde">Vores sponsorer</h1>
-        <p class="maksBredde">Foreningen er drevet på sponsorer og offentlige midler, og vi er derfor meget glad for dem der vil støtte. Se her,  hvem der har støttet os.<br><br></p>
+        <p class="maksBredde">Vores forening er drevet på sponsorer og offentlige midler, og vi er derfor meget glade for dem der vil støtte. Se her, hvem der har støttet os i kampen mod kræft.<br><br></p>
         <div class="sponsorerEksemplerFlex maksBredde">
             <div class="sponsorerEksemplerAfsnit">
                 <img src="images/sidebilleder/hjaelp-kraeft-ramte-i-forening.jpg" alt="sponsorat Netværk for yngre kræftramte">

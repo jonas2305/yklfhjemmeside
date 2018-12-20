@@ -77,7 +77,7 @@
     <!--INTRO-->
     <section class="hvemErViIntro maksBredde">
         <div class="hvemErViIntroTekst">
-            <h4>I netværket kan du møde ligestillede, der har samme tanker og bekymringer i forhold til børn, familieliv, arbejdsliv, angst for
+            <h4>I vores forening kan du møde ligestillede, der har samme tanker og bekymringer i forhold til kræft, børn, familieliv, arbejdsliv, angst for
                 tilbagefald og i forhold til det at komme videre i livet.
             </h4>
         </div>
@@ -101,7 +101,7 @@
                     det komme til at fylde mindre.<br><br>
                     Erfaringer viser dels, at man ved at deltage i en netværksgruppe kan få det bedre mentalt og at følelsen af at være alene, kan mindskes betydeligt.<br><br>
                     <strong>Jubilæum</strong><br>
-                    Vi startede foreningen tilbage i sommeren 2009, hvorfor vi snart kan fejre 10 års jubilæum. Foreningen blev grundlagt på baggrund af et savn om et
+                    Vi startede vores forening tilbage i sommeren 2009, hvorfor vi snart kan fejre 10 års jubilæum. Foreningen blev grundlagt på baggrund af et savn om et
                     netværk af ligestillede mennesker, der alle vidste, hvad det dreje om. Nogle der også oplever, eller har oplevet, det på egen krop, og kan give rigtige
                     erfaringer videre, og bare lytte til hvad man nu en gang har på hjertet.<br>
                     De 10 år er vi enormt stolte af, og vi bestræber os hårdt på at tage mindst 10 mere.<br><br>
@@ -140,7 +140,7 @@
                     <img src="images/portraetter/jeanne-forening-formand.jpg" alt="portræt Netværk for yngre kræftramte">
                     <h3>Jeanne Olsen</h3>
                     <p class="pWhite">MEDLEM I 10 ÅR<br><br>
-                        Jeg blev ramt af kraft i brystet for 10 år siden, og var med til at starte foreningen, da det manglede. Nu er jeg stolt formand, og prøver at
+                        Jeg blev ramt af kræft i brystet for 10 år siden, og var med til at starte foreningen, da det manglede. Nu er jeg stolt formand, og prøver at
                         give så meget som muligt videre.</p>
                 </div>
                 <div class="hvemErViMedlem">
