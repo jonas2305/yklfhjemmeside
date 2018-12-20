@@ -45,13 +45,13 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3em 0 0 10px;
-  margin: 0 -10px;
+  padding: 3em 0 0 0;
   width: 100vw !important; }
   .sideTitel h1 {
-    margin: 0;
+    margin: 0 auto;
     text-transform: uppercase;
-    text-shadow: -2px 2px 10px #FFFFFF; }
+    text-shadow: -2px 2px 10px #FFFFFF;
+    font-weight: 600 !important; }
 
 .btnSmall {
   background-color: #EFBA1A !important;
@@ -106,12 +106,18 @@ p {
     top: 3px;
     right: 3px; }
 
+.maksBredde {
+  padding: 0 15px !important; }
+
 @media screen and (min-width: 900px) {
   h1 {
     font-size: 3em; }
 
   .sideTitel {
-    padding: 4.5em 0 0 35px; } }
+    padding: 4.5em 0 0 0; }
+
+  .maksBredde {
+    padding: 0 35px !important; } }
 .arrangement-section {
   background-color: #F2F2F2; }
   .arrangement-section .arrangement {
@@ -129,18 +135,26 @@ p {
 .bold {
   font-weight: bold; }
 
-@media screen and (min-width: 1200px) {
+/*
+@media screen and(min-width: 1200px){
   body {
     width: 1200px;
-    margin: auto; } }
+    margin: auto;
+  }
+}*/
+@media screen and (min-width: 1150px) {
+  .maksBredde {
+    max-width: 1150px !important;
+    margin: auto !important; } }
 header {
   background-color: #0F2F50;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  padding: 10px 10px;
   z-index: 5;
   position: relative; }
+  header .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 10px; }
   header figure {
     margin: 10px; }
   header .logo-mobil {
@@ -170,8 +184,8 @@ header {
       margin: auto; }
       header .topnav .topnavContentWrapper .burgermenuClose {
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top: 10px;
+        right: 15px;
         font-size: 2.5em;
         color: #FFFFFF;
         cursor: pointer; }
@@ -193,41 +207,39 @@ header {
         header .topnav .topnavContentWrapper .topnavContent .menuActive {
           font-weight: 700; }
   @media screen and (min-width: 900px) {
-    header {
-      padding-bottom: 10px; }
-      header .logo-mobil {
+    header .logo-mobil {
+      display: none; }
+    header .logo-web {
+      display: block; }
+      header .logo-web a img {
+        display: flex;
+        margin: 5px 30px;
+        height: 60px;
+        width: auto; }
+    header .topnav {
+      height: auto; }
+      header .topnav .menuknap {
         display: none; }
-      header .logo-web {
-        display: block; }
-        header .logo-web a img {
-          display: flex;
-          margin: 5px 30px;
-          height: 60px;
-          width: auto; }
-      header .topnav {
-        height: auto; }
-        header .topnav .menuknap {
+      header .topnav .topnavContentWrapper {
+        display: flex;
+        align-items: center;
+        position: inherit;
+        padding-right: 15px;
+        height: 80px !important; }
+        header .topnav .topnavContentWrapper .burgermenuClose {
           display: none; }
-        header .topnav .topnavContentWrapper {
-          display: flex;
-          align-items: center;
+        header .topnav .topnavContentWrapper .topnavContent {
+          display: block;
           position: inherit;
-          padding-right: 15px;
-          height: 80px !important; }
-          header .topnav .topnavContentWrapper .burgermenuClose {
-            display: none; }
-          header .topnav .topnavContentWrapper .topnavContent {
-            display: block;
-            position: inherit;
-            float: right;
-            top: auto;
-            transform: none; }
-            header .topnav .topnavContentWrapper .topnavContent .menuActive {
-              font-weight: 700; }
-            header .topnav .topnavContentWrapper .topnavContent a {
-              font-size: 1em;
-              padding: 20px !important;
-              color: #FFFFFF; } }
+          float: right;
+          top: auto;
+          transform: none; }
+          header .topnav .topnavContentWrapper .topnavContent .menuActive {
+            font-weight: 700; }
+          header .topnav .topnavContentWrapper .topnavContent a {
+            font-size: 1em;
+            padding: 20px !important;
+            color: #FFFFFF; } }
   @media screen and (min-width: 1200px) {
     header a {
       font-size: 1.2em !important; } }
@@ -239,14 +251,18 @@ footer {
     line-height: 1.3em; }
   footer a {
     color: #FFFFFF; }
+  footer .footerSectionRight a {
+    text-decoration: none;
+    font-size: 2.5em; }
 
 @media screen and (min-width: 700px) {
-  footer {
+  footer .maksBredde {
     display: flex;
-    padding: 100px;
+    padding: 100px 50px;
     justify-content: space-between; }
-    footer .footerSectionLeft, footer .footerSectionMiddle, footer .footerSectionRight {
-      width: 30%; } }
+    footer .maksBredde .footerSectionLeft, footer .maksBredde .footerSectionMiddle, footer .maksBredde .footerSectionRight {
+      width: 30%;
+      margin: 100px 0; } }
 .forside-slider {
   height: 60vh;
   display: flex;
@@ -256,11 +272,13 @@ footer {
   background-repeat: no-repeat;
   background-position: center; }
   .forside-slider .forside-slider-tekst {
-    margin-left: 8vw; }
+    width: 90%;
+    max-width: 400px;
+    float: left; }
     .forside-slider .forside-slider-tekst h1 {
       color: #FFFFFF;
       text-shadow: #333333 2px 2px 2px;
-      font-size: 2em;
+      font-size: 1.4em;
       margin: 0; }
 
 .blaa-bar {
@@ -276,191 +294,217 @@ footer {
 .naeste-arrangementer {
   background-color: #F2F2F2; }
 
+.mainForside .sponsorerEksempler {
+  background-color: unset; }
+.mainForside .arrangement-section {
+  padding-bottom: 35px; }
+.mainForside .btnBig {
+  margin: 0 15px 20px 18px; }
+
 .se-alle-sponsorer-button {
   margin-top: 30px;
   display: flex;
   justify-content: center; }
 
 @media screen and (min-width: 900px) {
-  .forside-slider-tekst {
-    width: 30vw; }
+  .forside-slider .maksBredde {
+    display: flex;
+    justify-content: flex-start;
+    width: 1150px; }
+    .forside-slider .maksBredde .forside-slider-tekst {
+      width: 50vw;
+      max-width: 550px; }
+      .forside-slider .maksBredde .forside-slider-tekst h1 {
+        font-size: 2em !important; }
 
   .blaa-bar-indhold {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end; }
     .blaa-bar-indhold p {
-      width: 60vw; }
+      width: 75%;
+      margin-bottom: 0; }
 
   .forside-arrangementer {
     display: flex;
     flex-direction: row-reverse; }
     .forside-arrangementer .billede {
-      width: 50%; }
+      width: 50%;
+      margin: 35px 0; }
     .forside-arrangementer .forside-arrangementer-tekst {
-      width: 50%; } }
-.mainHvemErVi {
-  padding: 0 10px; }
-  .mainHvemErVi .hvemErViIntro {
-    display: flex;
-    flex-direction: column; }
-    .mainHvemErVi .hvemErViIntro .hvemErViIntroTekst {
-      width: 100%; }
-    .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo {
-      background-color: #0F2F50;
-      padding: 25px 10px;
-      margin: 0 -10px; }
-      .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo img {
-        width: auto;
-        max-height: 250px;
-        margin: auto; }
-  .mainHvemErVi .hvemErViOmForeningen img {
-    width: auto;
-    max-height: 250px;
-    margin: auto; }
-  .mainHvemErVi .hvemErViCitat {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .forside-arrangementer .forside-arrangementer-tekst h1 {
+        margin: 0;
+        font-size: 2.5em; } }
+.mainHvemErVi .hvemErViIntro {
+  display: flex;
+  flex-direction: column; }
+  .mainHvemErVi .hvemErViIntro .hvemErViIntroTekst {
+    width: 100%; }
+  .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo {
     background-color: #0F2F50;
-    margin: 30px -10px;
-    padding: 25px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .mainHvemErVi .hvemErViCitat div h3 {
-      margin-top: 0; }
-    .mainHvemErVi .hvemErViCitat img {
-      width: 30%;
-      height: 30%; }
-  .mainHvemErVi .hvemErViModMedlemmerne {
-    background-color: #F2F2F2;
-    margin: 0 -10px;
-    padding: 10px 10px; }
-    .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem {
-      background-color: #0F2F50;
-      padding: 20px;
-      margin: 20px auto; }
-      .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem h3 {
-        margin: 0; }
-      .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem p {
-        margin: 0; }
+    padding: 25px 10px; }
+    .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo img {
+      max-height: 250px;
+      margin: auto; }
+.mainHvemErVi .hvemErViOmForeningen img {
+  width: auto;
+  max-height: 250px;
+  margin: auto; }
+.mainHvemErVi .hvemErViCitat {
+  background-color: #0F2F50;
+  margin: 30px 0;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .mainHvemErVi .hvemErViCitat div h3 {
+    margin-top: 0; }
+  .mainHvemErVi .hvemErViCitat img {
+    width: 30%;
+    height: 30%; }
+.mainHvemErVi .hvemErViModMedlemmerne {
+  background-color: #F2F2F2;
+  padding: 5px 0; }
+  .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem {
+    background-color: #0F2F50;
+    padding: 20px;
+    margin: 20px auto; }
+    .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem h3 {
+      margin: 0; }
+    .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlem p {
+      margin: 0; }
+.mainHvemErVi .hvemErViArrangementer {
+  margin-bottom: 35px; }
   .mainHvemErVi .hvemErViArrangementer .hvemErViArrangementerLinkWrapper {
     margin: 30px 0; }
 
 @media screen and (min-width: 900px) {
-  .hvemErViIntro {
-    flex-direction: row !important;
-    margin: 35px 25px;
-    align-items: center;
-    justify-content: space-between; }
-    .hvemErViIntro .hvemErViIntroTekst {
-      width: 40% !important; }
-      .hvemErViIntro .hvemErViIntroTekst h4 {
-        font-size: 1.6em; }
-    .hvemErViIntro .hvemErViIntroVideo {
-      width: 40% !important; }
-
-  .hvemErViOmForeningen {
-    margin: 0 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .hvemErViOmForeningen .hvemErViOmForeningenTekst {
-      width: 55%; }
-      .hvemErViOmForeningen .hvemErViOmForeningenTekst p {
-        font-size: 1.2em; }
-    .hvemErViOmForeningen img {
-      max-height: none !important;
-      width: 40% !important;
-      margin: 0 !important; }
-
-  .hvemErViCitatWrapper {
-    width: 100%;
-    background-color: #0F2F50; }
-    .hvemErViCitatWrapper .hvemErViCitat {
-      width: 50%;
-      margin: auto !important; }
-      .hvemErViCitatWrapper .hvemErViCitat img {
-        margin-left: 10%;
-        width: 25%;
-        height: 25%; }
-
-  .hvemErViModMedlemmerne {
-    display: flex;
-    padding: 35px !important;
-    justify-content: space-between; }
-    .hvemErViModMedlemmerne .hvemErViMedlem {
-      width: 25%;
-      margin: 0 !important; }
-
-  .hvemErViArrangementer {
-    display: flex;
-    padding: 35px;
-    align-items: center; }
-    .hvemErViArrangementer h1 {
-      margin: 0; }
-    .hvemErViArrangementer img {
-      width: 30% !important;
-      height: 30%;
-      margin-left: 5%; } }
-.mainSponsorer {
-  padding: 0 10px; }
-  .mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv {
-      border: 3px solid #707070;
-      width: 40%;
-      height: 5em;
-      display: flex;
-      justify-content: center;
+  .mainHvemErVi {
+    padding: 0; }
+    .mainHvemErVi .hvemErViIntro {
+      flex-direction: row !important;
+      margin: 35px auto;
       align-items: center;
-      padding: 10px;
-      margin: 10px 0; }
-      .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv img {
-        width: auto;
-        height: auto;
-        max-width: 90% !important;
-        max-height: 90% !important; }
-  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
-    background-color: #0F2F50;
-    padding: 15px; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form {
+      justify-content: space-between; }
+      .mainHvemErVi .hvemErViIntro .hvemErViIntroTekst {
+        width: 40% !important; }
+        .mainHvemErVi .hvemErViIntro .hvemErViIntroTekst h4 {
+          font-size: 1.6em; }
+      .mainHvemErVi .hvemErViIntro .hvemErViIntroVideo {
+        width: 40% !important;
+        height: 40% !important;
+        max-height: 1000px !important; }
+    .mainHvemErVi .hvemErViOmForeningen {
+      margin-bottom: 35px;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=text], .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=email] {
-        height: 2em;
-        border-radius: 5px;
-        border: none;
-        padding: 5px;
-        margin-bottom: -10px; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=submit] {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .mainHvemErVi .hvemErViOmForeningen .hvemErViOmForeningenTekst {
+        width: 55%; }
+        .mainHvemErVi .hvemErViOmForeningen .hvemErViOmForeningenTekst p {
+          font-size: 1.2em; }
+      .mainHvemErVi .hvemErViOmForeningen img {
+        max-height: none !important;
+        width: 40% !important;
+        margin: 0 !important; }
+    .mainHvemErVi .hvemErViCitatWrapper {
+      width: 100vw;
+      background-color: #0F2F50;
+      padding: 35px 0; }
+      .mainHvemErVi .hvemErViCitatWrapper .hvemErViCitat {
         width: 50%;
-        margin-left: 50%;
-        margin-bottom: 0; }
-  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
-    background-color: #0F2F50;
-    padding: 15px;
-    margin: 15px auto; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten {
+        margin: auto !important; }
+        .mainHvemErVi .hvemErViCitatWrapper .hvemErViCitat img {
+          margin-left: 10%;
+          width: 25%;
+          height: 25%; }
+    .mainHvemErVi .hvemErViModMedlemmerne {
+      width: 100vw;
+      padding: 35px 0 !important; }
+      .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlemFlex {
+        display: flex;
+        justify-content: space-between; }
+        .mainHvemErVi .hvemErViModMedlemmerne .hvemErViMedlemFlex .hvemErViMedlem {
+          width: 25%;
+          margin: 0 !important; }
+    .mainHvemErVi .hvemErViArrangementer {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      width: 100%; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten img {
-        width: 25%;
-        height: 25%;
-        margin-right: 5%; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten h3 {
-        font-size: 1.1em;
-        margin: 0;
-        font-weight: 600; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
-      width: 60%;
-      margin: 10px auto auto auto;
-      justify-content: space-between;
-      display: flex; }
+      margin: 35px auto; }
+      .mainHvemErVi .hvemErViArrangementer h1 {
+        margin: 0; }
+      .mainHvemErVi .hvemErViArrangementer img {
+        width: 30% !important;
+        height: 30%;
+        margin-left: 5%; } }
+@media screen and (min-width: 1150px) {
+  .hvemErViIntroVideo {
+    margin: 35px 0 35px 5% !important; }
+
+  .hvemErViArrangementer img {
+    margin: 35px 0 35px 5% !important; } }
+.mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv {
+    border: 3px solid #707070;
+    width: 40%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0; }
+    .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv img {
+      width: auto;
+      height: auto;
+      max-width: 90% !important;
+      max-height: 90% !important; }
+.mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
+  background-color: #0F2F50;
+  padding: 15px; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=text], .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=email] {
+      height: 2em;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      margin-bottom: -10px; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=submit] {
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: 0; }
+.mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
+  background-color: #0F2F50;
+  padding: 15px;
+  margin: 15px auto; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten img {
+      width: 25%;
+      height: 25%;
+      margin-right: 5%; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten h3 {
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: 600; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
+    width: 60%;
+    margin: 10px auto auto auto;
+    justify-content: space-between;
+    display: flex; }
 
 .sponsorerEksempler {
   background-color: #F2F2F2;
@@ -480,28 +524,32 @@ footer {
   flex-direction: column; }
   .sponsorerIntro .sponsorerIntroTekst {
     width: 100%; }
-  .sponsorerIntro .sponsorerIntroBillede img {
-    width: 100%;
-    max-height: 250px;
-    margin: auto auto 15px auto; }
+  .sponsorerIntro .sponsorerIntroBillede {
+    overflow: hidden; }
+    .sponsorerIntro .sponsorerIntroBillede img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 250px;
+      margin: auto auto 15px auto; }
 
 @media screen and (min-width: 900px) {
   .sponsorerIntro {
     flex-direction: row !important;
-    margin: 35px 25px;
     align-items: center;
     justify-content: space-between; }
     .sponsorerIntro .sponsorerIntroTekst {
-      width: 40% !important; }
+      width: 50% !important; }
       .sponsorerIntro .sponsorerIntroTekst h4 {
         font-size: 1.6em; }
     .sponsorerIntro .sponsorerIntroBillede {
-      width: 40% !important; }
+      width: 40% !important;
+      overflow: hidden; }
       .sponsorerIntro .sponsorerIntroBillede img {
-        margin-bottom: 0 !important; }
+        margin: 35px auto 35px auto; }
 
   .sponsorerEksempler {
-    padding: 35px !important; }
+    padding: 35px 0 55px 0 !important; }
     .sponsorerEksempler .sponsorerEksemplerFlex {
       display: flex;
       justify-content: space-between; }
@@ -527,22 +575,24 @@ footer {
       margin: 0 !important; }
       .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
         width: 40% !important; } }
-.mainKontakt {
-  padding: 0 10px; }
-  .mainKontakt .kontaktModBestyrelsen {
-    background-color: #F2F2F2;
-    margin: 0 -10px;
-    padding: 10px 10px; }
-    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
-      background-color: #0F2F50;
-      padding: 20px;
-      margin: 20px auto; }
-      .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson h3 {
-        margin: 0; }
-      .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p {
-        margin: 0; }
-        .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p a {
-          color: #FFFFFF; }
+@media screen and (min-width: 1150px) {
+  .sponsorerIntroBillede img {
+    margin: 35px 0 !important; } }
+.mainKontakt .kontaktModBestyrelsen {
+  background-color: #F2F2F2;
+  width: 100vw;
+  margin: 0 -10px;
+  padding: 10px 10px; }
+  .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
+    background-color: #0F2F50;
+    padding: 20px;
+    margin: 20px auto; }
+    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson h3 {
+      margin: 0; }
+    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p {
+      margin: 0; }
+      .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson p a {
+        color: #FFFFFF; }
 
 .kontaktFormularWrapper .kontaktFormularForm {
   background-color: #0F2F50;
@@ -567,11 +617,11 @@ footer {
     width: 100%; }
 
 @media screen and (min-width: 900px) {
-  .mainKontakt .kontaktModBestyrelsen {
+  .mainKontakt .kontaktModBestyrelsenFlex {
     display: flex;
-    padding: 35px !important;
-    justify-content: space-between; }
-    .mainKontakt .kontaktModBestyrelsen .kontaktModBestyrelsenPerson {
+    justify-content: space-between;
+    padding-bottom: 35px; }
+    .mainKontakt .kontaktModBestyrelsenFlex .kontaktModBestyrelsenPerson {
       width: 25%;
       margin: 0 !important; }
 
@@ -587,65 +637,63 @@ footer {
     .kontaktFormularWrapper .kontaktFormularImg {
       width: 45%;
       margin: 0 !important; } }
-.mainSponsorer {
-  padding: 0 10px; }
-  .mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
+.mainSponsorer .sponsorerLogo .sponsorerLogoFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv {
+    border: 3px solid #707070;
+    width: 40%;
+    height: 5em;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv {
-      border: 3px solid #707070;
-      width: 40%;
-      height: 5em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      margin: 10px 0; }
-      .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv img {
-        width: auto;
-        height: auto;
-        max-width: 90% !important;
-        max-height: 90% !important; }
-  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
-    background-color: #0F2F50;
-    padding: 15px; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=text], .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=email] {
-        height: 2em;
-        border-radius: 5px;
-        border: none;
-        padding: 5px;
-        margin-bottom: -10px; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=submit] {
-        width: 50%;
-        margin-left: 50%;
-        margin-bottom: 0; }
-  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
-    background-color: #0F2F50;
-    padding: 15px;
-    margin: 15px auto; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten img {
-        width: 25%;
-        height: 25%;
-        margin-right: 5%; }
-      .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten h3 {
-        font-size: 1.1em;
-        margin: 0;
-        font-weight: 600; }
-    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
-      width: 60%;
-      margin: 10px auto auto auto;
-      justify-content: space-between;
-      display: flex; }
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0; }
+    .mainSponsorer .sponsorerLogo .sponsorerLogoFlex .logoDiv img {
+      width: auto;
+      height: auto;
+      max-width: 90% !important;
+      max-height: 90% !important; }
+.mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular {
+  background-color: #0F2F50;
+  padding: 15px; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=text], .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=email] {
+      height: 2em;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+      margin-bottom: -10px; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktFormular form input[type=submit] {
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: 0; }
+.mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo {
+  background-color: #0F2F50;
+  padding: 15px;
+  margin: 15px auto; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten img {
+      width: 25%;
+      height: 25%;
+      margin-right: 5%; }
+    .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoMorten h3 {
+      font-size: 1.1em;
+      margin: 0;
+      font-weight: 600; }
+  .mainSponsorer .sponsorerStotOs .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
+    width: 60%;
+    margin: 10px auto auto auto;
+    justify-content: space-between;
+    display: flex; }
 
 .sponsorerEksempler {
   background-color: #F2F2F2;
@@ -665,28 +713,32 @@ footer {
   flex-direction: column; }
   .sponsorerIntro .sponsorerIntroTekst {
     width: 100%; }
-  .sponsorerIntro .sponsorerIntroBillede img {
-    width: 100%;
-    max-height: 250px;
-    margin: auto auto 15px auto; }
+  .sponsorerIntro .sponsorerIntroBillede {
+    overflow: hidden; }
+    .sponsorerIntro .sponsorerIntroBillede img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 250px;
+      margin: auto auto 15px auto; }
 
 @media screen and (min-width: 900px) {
   .sponsorerIntro {
     flex-direction: row !important;
-    margin: 35px 25px;
     align-items: center;
     justify-content: space-between; }
     .sponsorerIntro .sponsorerIntroTekst {
-      width: 40% !important; }
+      width: 50% !important; }
       .sponsorerIntro .sponsorerIntroTekst h4 {
         font-size: 1.6em; }
     .sponsorerIntro .sponsorerIntroBillede {
-      width: 40% !important; }
+      width: 40% !important;
+      overflow: hidden; }
       .sponsorerIntro .sponsorerIntroBillede img {
-        margin-bottom: 0 !important; }
+        margin: 35px auto 35px auto; }
 
   .sponsorerEksempler {
-    padding: 35px !important; }
+    padding: 35px 0 55px 0 !important; }
     .sponsorerEksempler .sponsorerEksemplerFlex {
       display: flex;
       justify-content: space-between; }
@@ -712,6 +764,9 @@ footer {
       margin: 0 !important; }
       .sponsorerStotOsKontakt .sponsorerStotOsKontaktInfo .sponsorerStotOsKontaktInfoKnapper {
         width: 40% !important; } }
+@media screen and (min-width: 1150px) {
+  .sponsorerIntroBillede img {
+    margin: 35px 0 !important; } }
 .forside-slider {
   height: 60vh;
   display: flex;
@@ -721,11 +776,13 @@ footer {
   background-repeat: no-repeat;
   background-position: center; }
   .forside-slider .forside-slider-tekst {
-    margin-left: 8vw; }
+    width: 90%;
+    max-width: 400px;
+    float: left; }
     .forside-slider .forside-slider-tekst h1 {
       color: #FFFFFF;
       text-shadow: #333333 2px 2px 2px;
-      font-size: 2em;
+      font-size: 1.4em;
       margin: 0; }
 
 .blaa-bar {
@@ -741,34 +798,56 @@ footer {
 .naeste-arrangementer {
   background-color: #F2F2F2; }
 
+.mainForside .sponsorerEksempler {
+  background-color: unset; }
+.mainForside .arrangement-section {
+  padding-bottom: 35px; }
+.mainForside .btnBig {
+  margin: 0 15px 20px 18px; }
+
 .se-alle-sponsorer-button {
   margin-top: 30px;
   display: flex;
   justify-content: center; }
 
 @media screen and (min-width: 900px) {
-  .forside-slider-tekst {
-    width: 30vw; }
+  .forside-slider .maksBredde {
+    display: flex;
+    justify-content: flex-start;
+    width: 1150px; }
+    .forside-slider .maksBredde .forside-slider-tekst {
+      width: 50vw;
+      max-width: 550px; }
+      .forside-slider .maksBredde .forside-slider-tekst h1 {
+        font-size: 2em !important; }
 
   .blaa-bar-indhold {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end; }
     .blaa-bar-indhold p {
-      width: 60vw; }
+      width: 75%;
+      margin-bottom: 0; }
 
   .forside-arrangementer {
     display: flex;
     flex-direction: row-reverse; }
     .forside-arrangementer .billede {
-      width: 50%; }
+      width: 50%;
+      margin: 35px 0; }
     .forside-arrangementer .forside-arrangementer-tekst {
-      width: 50%; } }
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .forside-arrangementer .forside-arrangementer-tekst h1 {
+        margin: 0;
+        font-size: 2.5em; } }
 .login-main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;
+  margin-top: -60px;
   height: 100%;
   background-image: url("http://www.kjproductions.dk/yklf/images/yklf-login.jpg");
   background-repeat: no-repeat;
@@ -788,6 +867,11 @@ footer {
   .login-boks form label {
     color: #FFFFFF; }
 
+.mainAdminArrangementer {
+  background-color: #F2F2F2;
+  margin-top: -10px;
+  padding-top: 10px; }
+
 .log-ud {
   width: 100%;
   display: flex;
@@ -802,15 +886,15 @@ footer {
 
 .opret {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin: 0 10px; }
 
 .arrangement {
   background-color: #0F2F50;
   margin: 5% 10px 5% 10px !important; }
 
 .arrangement-section {
-  background-color: #F2F2F2;
-  padding: 20px; }
+  background-color: #F2F2F2; }
 
 .arrangement-buttons-wrapper {
   display: flex;
@@ -826,18 +910,24 @@ footer {
 
   .arrangementer-wrapper {
     display: flex;
-    justify-content: center; }
+    margin: 0 -10px; }
 
   .arrangement-wrapper {
-    width: 90vw; }
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
     .arrangement-wrapper .arrangement-padding-wrapper {
       padding: 10px; }
 
   .arrangement-buttons-wrapper button {
     width: 120px; } }
+@media screen and (min-width: 1050px) {
+  .arrangement {
+    width: 25.33% !important; } }
 .opret-arrangement {
   background-color: #0F2F50;
-  padding: 25px; }
+  padding: 25px;
+  margin: 35px 10px; }
   .opret-arrangement h1 {
     margin: 0;
     color: #E75037; }
@@ -870,17 +960,19 @@ footer {
     display: flex; }
     .opret-arrangement form .opret-arrangement-tidspunkt-wrapper input {
       margin-right: 5px; } }
-.mainArrangmentTilmelding .arrangement-tilmelding-wrapper {
-  padding: 10px; }
+.mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst {
+  margin-top: 35px; }
   .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst .arrangement-velkomst-dato h2 {
     margin: 0;
     font-size: 1.5em; }
   .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-velkomst .arrangement-velkomst-dato h4 {
     margin: 0; }
-  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold {
-    max-width: 1160px; }
-    .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold h4 {
-      margin: 40px 0 10px 0; }
+.mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold {
+  max-width: 1160px; }
+  .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-indhold h4 {
+    margin: 40px 0 10px 0; }
+.mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding {
+  margin-bottom: 35px; }
   .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding h1 {
     text-align: center; }
   .mainArrangmentTilmelding .arrangement-tilmelding-wrapper .arrangement-tilmelding .kontaktFormularWrapper {

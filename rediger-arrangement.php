@@ -53,46 +53,50 @@ $arrangement = mysqli_fetch_assoc($arrangementQuery);
 
 <body>
 
+<!--HEADER-->
 <header>
-    <!--Logo til Mobil-->
-    <nav class="logo-mobil">
-        <figure>
-            <a href="index.php" class="logo">
-                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
-            </a>
-        </figure>
-    </nav>
-    <!--Logo til WEB-->
-    <nav class="logo-web">
-        <figure>
-            <a href="index.php" class="logo">
-                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
-            </a>
-        </figure>
-    </nav>
-    <!--Selve navigationen-->
-    <nav class="topnav" id="myTopnav">
-        <!--Menuknap til burgermenu-->
-        <div class="menuknap">
-            <i id="menuOpen" class="fas fa-bars"></i>
-        </div>
-        <!--Menu-->
-        <div class="topnavContentWrapper">
-            <!--Lukkeknap til burgermenu-->
-            <i class="fas fa-times burgermenuClose"></i>
-            <!--Menupunkter-->
-            <div class="topnavContent">
-                <a class="menuActive" href="index.php">Forside</a>
-                <a href="arrangementer.php">Arrangementer</a>
-                <a href="hvemervi.php">Hvem er vi?</a>
-                <a href="sponsorer.php">Sponsorer</a>
-                <a href="kontakt.php">Kontakt</a>
+    <div class="maksBredde headerWrapper">
+        <!--Logo til Mobil-->
+        <nav class="logo-mobil">
+            <figure>
+                <a href="index.php" class="logo">
+                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                </a>
+            </figure>
+        </nav>
+        <!--Logo til WEB-->
+        <nav class="logo-web">
+            <figure>
+                <a href="index.php" class="logo">
+                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                </a>
+            </figure>
+        </nav>
+        <!--Selve navigationen-->
+        <nav class="topnav" id="myTopnav">
+            <!--Menuknap til burgermenu-->
+            <div class="menuknap">
+                <i id="menuOpen" class="fas fa-bars"></i>
             </div>
-        </div>
-    </nav>
+            <!--Menu-->
+            <div class="topnavContentWrapper">
+                <!--Lukkeknap til burgermenu-->
+                <i class="fas fa-times burgermenuClose"></i>
+                <!--Menupunkter-->
+                <div class="topnavContent">
+                    <a href="index.php">Forside</a>
+                    <a href="arrangementer.php">Arrangementer</a>
+                    <a href="hvemervi.php">Hvem er vi?</a>
+                    <a href="sponsorer.php">Sponsorer</a>
+                    <a href="kontakt.php">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
 </header>
 
-<main>
+<main class="maksBredde">
     <div class="log-ud">
         <a href = "admin-arrangementer.php">
             <button class="btnReg log-ud-btn">Annuller</button>
@@ -132,6 +136,40 @@ $arrangement = mysqli_fetch_assoc($arrangementQuery);
     </section>
     </div>
 </main>
+
+<!--FOOTER SEKTION-->
+<footer>
+    <div class="maksBredde">
+        <div class="footerSectionLeft">
+            <h3>Adresse</h3>
+            <p class="pWhite">Frivillig Center Lolland<br>
+                Sdr. Boulevard 82 A <br>
+                4930 Maribo<br></p>
+            <a href="https://goo.gl/maps/CBCQgttvir42" target="_blank">Find vej</a>
+        </div>
+        <div class="footerSectionMiddle">
+            <h3>Kontakt</h3>
+            <p class="pWhite">Kontaktperson:<br>
+                Neel Back Lund <br>
+                <a href="mailto:nbl@yklf.dk">nbl@yklf.dk</a> <br>
+                <a href="tel:+4551512249">51 51 22 49</a> <br></p>
+        </div>
+        <div class="footerSectionRight">
+            <h3>Følg med</h3>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </div>
+    </div>
+
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

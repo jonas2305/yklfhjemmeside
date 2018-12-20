@@ -78,13 +78,13 @@ p{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3em 0 0 10px;
-  margin: 0 -10px;
+  padding: 3em 0 0 0;
   width: 100vw!important;
   h1{
-    margin: 0;
+    margin: 0 auto;
     text-transform: uppercase;
     text-shadow: -2px 2px 10px $color-pri-white;
+    font-weight: 600!important;
   }
 }
 
@@ -147,6 +147,11 @@ p{
   }
 }
 
+//FORSØG MED MAKS. BREDDE
+.maksBredde{
+  padding: 0 15px!important;
+}
+
 // STYLER ALLE ELEMENTER OVER 900PX
 @media screen and(min-width: 900px){
 
@@ -157,9 +162,13 @@ p{
 
   //STYLER TITEL-ELEMENT PÅ ALLE SIDER
   .sideTitel{
-    padding: 4.5em 0 0 35px;
+    padding: 4.5em 0 0 0;
   }
 
+  //FORSØG MED MAKS. BREDDE
+  .maksBredde{
+    padding: 0 35px!important;
+  }
 }
 
 
@@ -193,9 +202,18 @@ p{
 
 
 //FORSØG MED CENTRERING AF SIDEINDHOLD OVER 1200 PX BREDDE
+/*
 @media screen and(min-width: 1200px){
   body {
     width: 1200px;
     margin: auto;
+  }
+}*/
+
+//FORSØG MED MAKS. BREDDE
+@media screen and(min-width: 1150px){
+  .maksBredde{
+    max-width: 1150px!important;
+    margin: auto!important;
   }
 }

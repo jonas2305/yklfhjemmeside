@@ -1,8 +1,8 @@
-//.admin-arrangementer{
-//  a{
-//    height: 0;
-//  }
-//}
+.mainAdminArrangementer{
+  background-color: $color-pri-lightgrey;
+  margin-top: -10px;
+  padding-top: 10px;
+}
 
 .log-ud{
   width: 100%;
@@ -24,7 +24,7 @@
 .opret {
   display: flex;
   justify-content: center;
-
+  margin: 0 10px;
 }
 
 .arrangement{
@@ -35,7 +35,6 @@
 
 .arrangement-section{
   background-color: $color-pri-lightgrey;
-  padding: 20px;
 }
 
 .arrangement-buttons-wrapper{
@@ -56,12 +55,13 @@
 
   .arrangementer-wrapper{
     display: flex;
-    //flex-wrap: wrap;
-    justify-content: center;
+    margin: 0 -10px;
   }
 
   .arrangement-wrapper{
-    width: 90vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     .arrangement-padding-wrapper{
       padding: 10px;
     }
@@ -71,5 +71,11 @@
     button{
       width: 120px;
     }
+  }
+}
+
+@media screen and(min-width: 1050px) {
+  .arrangement{
+    width: 25.33%!important;
   }
 }

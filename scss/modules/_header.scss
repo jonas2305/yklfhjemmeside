@@ -1,12 +1,14 @@
 //HEADER STYLING - GÆLDER BÅDE MOBIL OG PC
 header {
   background-color: $color-pri-darkblue;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  padding: 10px 10px;
   z-index: 5;
   position: relative;
+  .headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 10px;
+  }
   //Mobil logo vises og styles
   figure {
     margin: 10px;
@@ -45,8 +47,8 @@ header {
       margin: auto;
       .burgermenuClose {
         position: absolute;
-        top: 20px;
-        right: 10px;
+        top: 10px;
+        right: 15px;
         font-size: 2.5em;
         color: $color-pri-white;
         cursor: pointer;
@@ -75,7 +77,6 @@ header {
   }
   //CSS GÆLDER KUN FOR PC-HEADER (ALM. MENU)
   @media screen and(min-width: 900px){
-    padding-bottom: 10px;
     //Skjuler logo på mobil
     .logo-mobil{
       display: none;

@@ -27,52 +27,55 @@
 
 <!--HEADER-->
 <header>
-    <!--Logo til Mobil-->
-    <nav class="logo-mobil">
-        <figure>
-            <a href="index.php" class="logo">
-                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
-            </a>
-        </figure>
-    </nav>
-    <!--Logo til WEB-->
-    <nav class="logo-web">
-        <figure>
-            <a href="index.php" class="logo">
-                <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
-            </a>
-        </figure>
-    </nav>
-    <!--Selve navigationen-->
-    <nav class="topnav" id="myTopnav">
-        <!--Menuknap til burgermenu-->
-        <div class="menuknap">
-            <i id="menuOpen" class="fas fa-bars"></i>
-        </div>
-        <!--Menu-->
-        <div class="topnavContentWrapper">
-            <!--Lukkeknap til burgermenu-->
-            <i class="fas fa-times burgermenuClose"></i>
-            <!--Menupunkter-->
-            <div class="topnavContent">
-                <a class="menuActive" href="index.php">Forside</a>
-                <a href="arrangementer.php">Arrangementer</a>
-                <a href="hvemervi.php">Hvem er vi?</a>
-                <a href="sponsorer.php">Sponsorer</a>
-                <a href="kontakt.php">Kontakt</a>
+    <div class="maksBredde headerWrapper">
+        <!--Logo til Mobil-->
+        <nav class="logo-mobil">
+            <figure>
+                <a href="index.php" class="logo">
+                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                </a>
+            </figure>
+        </nav>
+        <!--Logo til WEB-->
+        <nav class="logo-web">
+            <figure>
+                <a href="index.php" class="logo">
+                    <img src="images/logo/logo-02.png" alt="Netværk for yngre kræftramte logo">
+                </a>
+            </figure>
+        </nav>
+        <!--Selve navigationen-->
+        <nav class="topnav" id="myTopnav">
+            <!--Menuknap til burgermenu-->
+            <div class="menuknap">
+                <i id="menuOpen" class="fas fa-bars"></i>
             </div>
-        </div>
-    </nav>
+            <!--Menu-->
+            <div class="topnavContentWrapper">
+                <!--Lukkeknap til burgermenu-->
+                <i class="fas fa-times burgermenuClose"></i>
+                <!--Menupunkter-->
+                <div class="topnavContent">
+                    <a href="index.php">Forside</a>
+                    <a href="arrangementer.php">Arrangementer</a>
+                    <a href="hvemervi.php">Hvem er vi?</a>
+                    <a href="sponsorer.php">Sponsorer</a>
+                    <a href="kontakt.php">Kontakt</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
 </header>
 
 <!--MAIN SPONSORER-->
 <main class="mainSponsorer">
     <!--SIDETITEL-->
     <section class="sideTitel">
-        <h1>Sponsorer</h1>
+        <h1 class="maksBredde">Sponsorer</h1>
     </section>
     <!--INTRO-->
-    <section class="sponsorerIntro">
+    <section class="sponsorerIntro maksBredde">
         <div class="sponsorerIntroTekst">
             <h4>I netværket kan du møde ligestillede, der har samme tanker og bekymringer i forhold til børn, familieliv, arbejdsliv, angst for
                 tilbagefald og i forhold til det at komme videre i livet.
@@ -84,29 +87,32 @@
     </section>
     <!--EKSEMPLER PÅ SPONSORATER-->
     <section class="sponsorerEksempler">
-        <h1>Eksempler på sponsorater</h1>
-        <div class="sponsorerEksemplerFlex">
-            <div class="sponsorerEksemplerAfsnit">
-                <img src="images/sidebilleder/pengeSponsor.jpg" alt="sponsorat Netværk for yngre kræftramte">
-                <h3>Stafet for livet</h3>
-                <p class="pWhite">Støttet af: Lions Sydlolland<br><br>
-                    Donation til afvikling af Stafet for livet.</p>
-            </div>
-            <div class="sponsorerEksemplerAfsnit">
-                <img src="images/sidebilleder/wellnessSponsor.jpg" alt="wellnesstur Netværk for yngre kræftramte">
-                <h3>Wellnesstur</h3>
-                <p class="pWhite">Støttet af: Tryg Fonden<br><br>
-                    Wellnesstur til Nordtyskland for alle foreningens medlemmer.</p>
-            </div>
-            <div class="sponsorerEksemplerAfsnit">
-                <img src="images/sidebilleder/taskeSponsor.jpg" alt="taske Netværk for yngre kræftramte">
-                <h3>Tasker til medlemmer</h3>
-                <p class="pWhite">Støttet af: Halstedhus Efterskole<br><br>
-                    Donation af tasker til alle medlemmer.</p>
+        <div class="maksBredde">
+            <h1>Eksempler på sponsorater</h1>
+            <div class="sponsorerEksemplerFlex">
+                <div class="sponsorerEksemplerAfsnit">
+                    <img src="images/sidebilleder/pengeSponsor.jpg" alt="sponsorat Netværk for yngre kræftramte">
+                    <h3>Stafet for livet</h3>
+                    <p class="pWhite">Støttet af: Lions Sydlolland<br><br>
+                        Donation til afvikling af Stafet for livet.</p>
+                </div>
+                <div class="sponsorerEksemplerAfsnit">
+                    <img src="images/sidebilleder/wellnessSponsor.jpg" alt="wellnesstur Netværk for yngre kræftramte">
+                    <h3>Wellnesstur</h3>
+                    <p class="pWhite">Støttet af: Tryg Fonden<br><br>
+                        Wellnesstur til Nordtyskland for alle foreningens medlemmer.</p>
+                </div>
+                <div class="sponsorerEksemplerAfsnit">
+                    <img src="images/sidebilleder/taskeSponsor.jpg" alt="taske Netværk for yngre kræftramte">
+                    <h3>Tasker til medlemmer</h3>
+                    <p class="pWhite">Støttet af: Halstedhus Efterskole<br><br>
+                        Donation af tasker til alle medlemmer.</p>
+                </div>
             </div>
         </div>
+
     </section>
-    <section class="sponsorerLogo">
+    <section class="sponsorerLogo maksBredde">
         <h1>De støtter os</h1>
         <div class="sponsorerLogoFlex">
             <div class="logoDiv">
@@ -147,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section class="sponsorerStotOs">
+    <section class="sponsorerStotOs maksBredde">
         <h1>Vil du støtte os?</h1>
         <div class="sponsorerStotOsKontakt">
             <div class="sponsorerStotOsKontaktFormular">
@@ -182,23 +188,36 @@
 
 <!--FOOTER SEKTION-->
 <footer>
-    <div class="footerSectionLeft">
-        <h3>Adresse</h3>
-        <p class="pWhite">Frivillig Center Lolland<br>
-            Sdr. Boulevard 82 A <br>
-            4930 Maribo<br></p>
-        <a href="https://goo.gl/maps/CBCQgttvir42" target="_blank">Find vej</a>
+    <div class="maksBredde">
+        <div class="footerSectionLeft">
+            <h3>Adresse</h3>
+            <p class="pWhite">Frivillig Center Lolland<br>
+                Sdr. Boulevard 82 A <br>
+                4930 Maribo<br></p>
+            <a href="https://goo.gl/maps/CBCQgttvir42" target="_blank">Find vej</a>
+        </div>
+        <div class="footerSectionMiddle">
+            <h3>Kontakt</h3>
+            <p class="pWhite">Kontaktperson:<br>
+                Neel Back Lund <br>
+                <a href="mailto:nbl@yklf.dk">nbl@yklf.dk</a> <br>
+                <a href="tel:+4551512249">51 51 22 49</a> <br></p>
+        </div>
+        <div class="footerSectionRight">
+            <h3>Følg med</h3>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/nyklf/?ref=br_rs" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </div>
     </div>
-    <div class="footerSectionMiddle">
-        <h3>Kontakt</h3>
-        <p class="pWhite">Kontaktperson:<br>
-            Neel Back Lund <br>
-            <a href="mailto:nbl@yklf.dk">nbl@yklf.dk</a> <br>
-            <a href="tel:+4551512249">51 51 22 49</a> <br></p>
-    </div>
-    <div class="footerSectionRight">
-        <h3>Næste Arrangement</h3>
-    </div>
+
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

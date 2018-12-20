@@ -1,6 +1,4 @@
 .mainSponsorer{
-  padding: 0 10px;
-
   .sponsorerLogo{
     .sponsorerLogoFlex{
       display: flex;
@@ -101,8 +99,11 @@
     width: 100%;
   }
   .sponsorerIntroBillede{
+    overflow: hidden;
     img {
-      width: 100%;
+      width: auto;
+      height: auto;
+      max-width: 100%;
       max-height: 250px;
       margin: auto auto 15px auto;
     }
@@ -112,24 +113,24 @@
 @media screen and(min-width: 900px){
   .sponsorerIntro{
     flex-direction: row!important;
-    margin: 35px 25px;
     align-items: center;
     justify-content: space-between;
     .sponsorerIntroTekst{
-      width: 40%!important;
+      width: 50%!important;
       h4{
         font-size: 1.6em;
       }
     }
     .sponsorerIntroBillede{
       width: 40%!important;
+      overflow: hidden;
       img {
-        margin-bottom: 0 !important;
+        margin: 35px auto 35px auto;
       }
     }
   }
   .sponsorerEksempler{
-    padding: 35px!important;
+    padding: 35px 0 55px 0!important;
     .sponsorerEksemplerFlex{
       display: flex;
       justify-content: space-between;
@@ -164,6 +165,14 @@
       .sponsorerStotOsKontaktInfoKnapper{
         width: 40% !important;
       }
+    }
+  }
+}
+
+@media screen and(min-width: 1150px){
+  .sponsorerIntroBillede{
+    img{
+      margin: 35px 0!important;
     }
   }
 }

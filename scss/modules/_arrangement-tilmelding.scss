@@ -1,7 +1,7 @@
 .mainArrangmentTilmelding{
   .arrangement-tilmelding-wrapper {
-    padding: 10px;
     .arrangement-velkomst {
+      margin-top: 35px;
       .arrangement-velkomst-dato {
         h2 {
           margin: 0;
@@ -19,6 +19,7 @@
       max-width: 1160px;
     }
     .arrangement-tilmelding {
+      margin-bottom: 35px;
       h1 {
         text-align: center;
       }

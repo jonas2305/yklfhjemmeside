@@ -7,15 +7,24 @@ footer{
   a{
     color: $color-pri-white;
   }
+  .footerSectionRight{
+    a{
+      text-decoration: none;
+      font-size: 2.5em;
+    }
+  }
 }
 
 @media screen and(min-width: 700px) {
   footer{
-    display: flex;
-    padding: 100px;
-    justify-content: space-between;
-    .footerSectionLeft, .footerSectionMiddle, .footerSectionRight{
-      width: 30%;
+    .maksBredde {
+      display: flex;
+      padding: 100px 50px;
+      justify-content: space-between;
+      .footerSectionLeft, .footerSectionMiddle, .footerSectionRight {
+        width: 30%;
+        margin: 100px 0;
+      }
     }
   }
   
